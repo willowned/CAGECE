@@ -1,0 +1,186 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+		<link type="text/css" rel="stylesheet" href="custom.css"/>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+		<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="fluig-style-guide">
+			<form name="form" role="form">
+				<div class="page-header">
+					<h1>SOLICITA&Ccedil;&Atilde;O DE PAGAMENTO</h1>
+					<div class="text-info">
+						<span class="fluigicon fluigicon-info-sign fluigicon-xs"></span>&nbsp;Os Campos com * s&atilde;o obrigat&oacute;rios
+					</div>
+				</div>
+				<!-- [Inicio] cabecalho da solicitacao -->
+				<div>
+					<!-- [Inicio] Processo -->
+					<div class="panel panel-info">
+						<div class="panel-heading" style="background-color: #0072b4">
+							<h3 class="panel-title">
+								<a class="collapse-icon up" data-toggle="collapse" data-parent="#accordion" href="#collapseCabecalho">
+									<span class="flaticon flaticon-message icon-sm"></span>&nbsp;Dados Solicita&ccedil;&atilde;o </a>
+							</h3>
+						</div>
+						<div id="collapseCabecalho" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<div class="row">
+									<div class="form-group col-md-2">
+										<label class="control-label" for="nr_solicitacao">N&uacute;mero Solicita&ccedil;&atilde;o</label>
+										<input type="text" class="form-control" id="nr_solicitacao" name="nr_solicitacao" readonly />
+									</div>
+									<div class="form-group col-md-7">
+										<label class="control-label" for="nm_solicitante">Solicitante</label>
+										<input type="text" class="form-control" id="nm_solicitante" name="nm_solicitante" readonly />
+										<input type="hidden" id="cd_solicitante" name="cd_solicitante" />
+										<input type="hidden" id="mail_solicitante" name="mail_solicitante" />
+									</div>
+									<div class="form-group col-md-2">
+										<label class="control-label" for="dt_solicitacao">Data Solicita&ccedil;&atilde;o</label>
+										<input type="text" class="form-control" id="dt_solicitacao" name="dt_solicitacao" readonly />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-info">
+						<div class="panel-heading" style="background-color: #0072b4">
+							<h3 class="panel-title">
+								<a class="collapse-icon up" data-toggle="collapse" data-parent="#accordion" href="#collapseProcesso">
+									<span class="flaticon flaticon-message icon-sm"></span>&nbsp;Dados Processo </a>
+							</h3>
+						</div>
+						<div id="collapseProcesso" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<div class="row">
+									<div class="form-group col-md-3">
+										<label class="control-label required" for="nr_processo">N&uacute;mero Processo</label>
+										<input type="zoom" name="nr_processo" id="nr_processo"
+											data-zoom="{
+													'displayKey':'colleagueName',
+													'datasetId':'colleague',
+													'filterValues':'',
+													'placeholder':'Buscar pagamento',
+													'fields':[
+													{
+														'field':'colleagueName',
+														'label':'Nome do Respons�vel'
+													},
+													{
+														'field':'mail',
+														'label':'E-mail'
+													}
+													]
+												}" />
+									</div>
+									<div class="form-group col-md-4">
+										<label class="control-label" for="nm_titulo">T&iacute;tulo Processo</label>
+										<input type="text" class="form-control" id="nm_titulo" name="nm_titulo" readonly />
+									</div>	
+									<div class="form-group col-md-2">
+										<label class="control-label" for="dt_processo">Data do Pagamento</label>
+										<input type="text" class="form-control" id="dt_pagamento" name="dt_pagamento" readonly />
+									</div>		
+									<div class="form-group col-md-2">
+										<label>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+										<button type="button" class="btn btn-primary" onclick="">Acessar Documentos</button>
+									</div>									
+								</div>
+								<div class="row">
+									<div class="col-md-3">
+										<button class="btn btn-primary" style="" onclick="wdkAddChild('table_pagamentos')">Adicionar Pagamento</button>
+									</div>
+								</div></br>
+								<div class="row">
+									<div class="col-md-12">
+										<table border="0" class="table table-striped table-bordered" tablename="table_pagamentos" id="table_pagamentos" nodeletebutton="true" noaddbutton="true">
+											<thead>
+												<tr>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<div class="form-group row">	
+															<div class="lixeira">
+																<div class="control col-xs-1 fs-no-padding-right">
+																	<button type="button" class="btn btn-danger" onclick="Javascript:fnWdkRemoveChild(this)">
+																		<i class="fluigicon fluigicon-trash icon-md " ></i>
+																	</button>
+																</div>
+															</div>
+															<div class="col-md-9">
+																<label for="">Descrição</label> 
+																<textarea class="form-control" name="ds_prazos" id="ds_prazos" rows="3" ></textarea>
+															</div>															
+															<div class="col-md-2">
+																<label for="">Valor</label> 
+																<input type="text" class="form-control" name="nm_acao_prazos" id="nm_acao_prazos" >
+															</div>
+														</div>														
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>						
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-info" id="div_aprovacao">
+						<div class="panel-heading" style="background-color: #0072b4">
+							<h3 class="panel-title">
+								<a class="collapse-icon up" data-toggle="collapse" data-parent="#accordion" href="#collapseAprovacao">
+									<span class="flaticon flaticon-message icon-sm"></span>&nbsp;Aprova&ccedil;&atilde;o</a>
+							</h3>
+						</div>
+						<div id="collapseAprovacao" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-6 form-group">
+										<label class="control-label" for="nm_aprovador_ger">Aprovador</label>
+										<input type="text" class="form-control" name="nm_aprovador_ger" id="nm_aprovador_ger" readonly>
+										<input type="hidden" id="dataHoraGer" name="dataHoraGer" />
+									</div>
+									<div class="col-md-2 form-group">
+										<label class="control-label" for="dt_aprova_ger">Data</label>
+										<input type="text" class="form-control" name="dt_aprova_ger" id="dt_aprova_ger" readonly>
+									</div>
+									<div class="col-md-2 form-group">
+										<label class="control-label" for="hr_aprova_ger">Hora</label>
+										<input type="text" class="form-control" name="hr_aprova_ger" id="hr_aprova_ger" readonly>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 form-group">
+										<label class="control-label required">Aprovar a solicita&ccedil;&atilde;o de pagamento?</label>
+										<div class="input-group">
+											<div class="custom-radio custom-radio-inline custom-radio-primary">
+										        <input type="radio" name="rd_aprovacao_" value="sim" id="rd_aprovacao__sim" onclick="checkApproveRequired(this.name, 'ds_aprovacao_gerente')" />
+										        <label for="rd_aprovacao__sim">Sim</label>
+										    </div>
+											<div class="custom-radio custom-radio-inline custom-radio-primary">
+										        <input type="radio" name="rd_aprovacao_" value="nao" id="rd_aprovacao__nao" onclick="checkApproveRequired(this.name, 'ds_aprovacao_gerente')" />
+										        <label for="rd_aprovacao__nao">N&atilde;o</label>
+										    </div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 form-group">
+										<label class="control-label">Justificativa</label>
+										<textarea class="form-control" rows="5" id="ds_aprovacao_gerente" name="ds_aprovacao_gerente"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>			
+			</form>
+		</div>
+	</body>
+</html>

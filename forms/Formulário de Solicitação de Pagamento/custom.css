@@ -1,0 +1,4 @@
+form label.required:after {
+	color: #FF0000;
+	content: " *";
+}

@@ -1,0 +1,101 @@
+<html>
+<head>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<link type="text/css" rel="stylesheet" href="/portal/resources/style-guide/css/fluig-style-guide.min.css"/>
+	<script type="text/javascript" src="/portal/resources/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+</head>
+<body>
+<div class="fluig-style-guide">
+<form name="form" class="form-horizontal">
+	<input type="hidden" id="cdFollowUp" name="cdFollowUp">
+	<input type="hidden" id="cdStatusAtividade" name="cdStatusAtividade">
+	<input type="hidden" id="cdAssJur" name="cdAssJur">
+	<input type="hidden" id="cdTipoFU" name="cdTipoFU">
+	<input type="hidden" id="cdSolicitante" name="cdSolicitante">	
+	<input type="hidden" id="cdUserExec" name="cdUserExec">	
+	<input type="hidden" id="sConfigs" name="sConfigs">
+	<input type="hidden" id="cdExecAprova" name="cdExecAprova">
+	<input type="hidden" id="sValor" name="sValor">
+	<input type="hidden" id="sOrigem" name="sOrigem">
+	<input type="hidden" id="sHora" name="sHora">
+	<input type="hidden" id="sDocs" name="sDocs">
+	<input type="hidden" id="sDocsCur" name="sDocsCur">
+	<input type="hidden" id="sPastaCaso" name="sPastaCaso">
+	<input type="hidden" id="sExecutorFluig" name="sExecutorFluig">
+	<input type="hidden" id="sFilial" name="sFilial">			
+	<input type="hidden" id="sCajuri" name="sCajuri">	
+		
+	<div class="form-group">
+		<label for="numSolic" class="col-md-2 control-label">N&#58; da Solicita&ccedil;&atilde;o</label>
+		<div class="col-md-3">
+			<input type="text" class="form-control" id="numSolic" name="numSolic" readonly>
+		</div>
+		<label for="dtInicial" class="col-md-2 control-label">Data de Inclus&atilde;o</label>
+		<div class="col-md-3">
+			<input type="text" class="form-control" id="dtInicial" name="dtInicial" readonly>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="sSolicitante" class="col-md-2 control-label">Solicitante</label>
+		<div class="col-md-3">
+			<input type="text" class="form-control" id="sSolicitante" name="sSolicitante" readonly>
+		</div>
+		<label for="sUserExec" class="col-md-2 control-label">Executor</label>
+		<div class="col-md-3">
+			<input type="text" class="form-control" id="sUserExec" name="sUserExec" readonly>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="sTipoFU" class="col-md-2 control-label">Tipo de Follow-Up</label>
+		<div class="col-md-3">
+			<input type="text" class="form-control" id="sTipoFU" name="sTipoFU" readonly>
+		</div>
+		<label for="sStatusAtividade" class="col-md-2 control-label">Status da Atividade</label>
+		<div class="col-md-3">
+			<input type="text" class="form-control" id="sStatusAtividade" name="sStatusAtividade" readonly>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="sDescAtividade" class="col-md-2 control-label">Descri&ccedil;&atilde;o da Atividade</label>
+		<div class="col-md-8">
+			<textarea class="form-control" id="sDescAtividade" name="sDescAtividade" rows="3" readonly></textarea>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="sComplemento" class="col-md-2 control-label">Complemento</label>
+		<div class="col-md-8">
+			<textarea class="form-control" id="sComplemento" name="sComplemento" rows="3" readonly></textarea>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="sObsExecutor" class="col-md-2 control-label">Observa&ccedil;&otilde;es Executor</label>
+		<div class="col-md-8">
+			<textarea class="form-control" id="sObsExecutor" name="sObsExecutor" rows="3"></textarea>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="sObsAprovador" class="col-md-2 control-label">Observa&ccedil;&otilde;es Aprovador</label>
+		<div class="col-md-8">
+			<textarea class="form-control" id="sObsAprovador" name="sObsAprovador" rows="3"></textarea>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="dtPrazoTarefa" class="col-md-2 control-label">Prazo de Execu&ccedil;&atilde;o</label>
+		<div class="col-md-3">
+			<input type="text" class="form-control" id="dtPrazoTarefa" name="dtPrazoTarefa" readonly>
+		</div>
+		<label for="dtPrazoAprova" class="col-md-2 control-label">Prazo de Aprova&ccedil;&atilde;o</label>
+		<div class="col-md-3">
+			<input type="text" class="form-control" id="dtPrazoAprova" name="dtPrazoAprova" readonly>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="sCodigoJuridico" class="col-md-2 control-label">Codigo Jur&iacute;dico</label>
+		<div class="col-md-3">
+			<input type="text" class="form-control" id="sCodigoJuridico" name="sCodigoJuridico" readonly>
+		</div>
+	</div>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+		<link type="text/css" rel="stylesheet" href="custom.css"/>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+		<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="fluig-style-guide">
+			<form name="form" role="form">
+				<div class="page-header">
+					<h1>ASSINATURA DE DESPACHO</h1>
+					<div class="text-info">
+						<span class="fluigicon fluigicon-info-sign fluigicon-xs"></span>&nbsp;Os Campos com * s&atilde;o obrigat&oacute;rios
+					</div>
+				</div>
+				<!-- [Inicio] cabecalho da solicitacao -->
+				<div>
+					<!-- [Inicio] Processo -->
+					<div class="panel panel-info">
+						<div class="panel-heading" style="background-color: #0072b4">
+							<h3 class="panel-title">
+								<a class="collapse-icon up" data-toggle="collapse" data-parent="#accordion" href="#collapseCabecalho">
+									<span class="flaticon flaticon-message icon-sm"></span>&nbsp;Dados Solicita&ccedil;&atilde;o </a>
+							</h3>
+						</div>
+						<div id="collapseCabecalho" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<div class="row">
+									<div class="form-group col-md-3">
+										<label class="control-label" for="nr_solicitacao">N&uacute;mero Solicita&ccedil;&atilde;o</label>
+										<input type="text" class="form-control" id="nr_solicitacao" name="nr_solicitacao" readonly />
+									</div>
+									<div class="form-group col-md-7">
+										<label class="control-label" for="nm_solicitante">Solicitante</label>
+										<input type="text" class="form-control" id="nm_solicitante" name="nm_solicitante" readonly />
+										<input type="hidden" id="cd_solicitante" name="cd_solicitante" />
+										<input type="hidden" id="mail_solicitante" name="mail_solicitante" />
+									</div>
+									<div class="form-group col-md-2">
+										<label class="control-label" for="dt_solicitacao">Data Solicita&ccedil;&atilde;o</label>
+										<input type="text" class="form-control" id="dt_solicitacao" name="dt_solicitacao" readonly />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-info">
+						<div class="panel-heading" style="background-color: #0072b4">
+							<h3 class="panel-title">
+								<a class="collapse-icon up" data-toggle="collapse" data-parent="#accordion" href="#collapseProcesso">
+									<span class="flaticon flaticon-message icon-sm"></span>&nbsp;Dados Processo </a>
+							</h3>
+						</div>
+						<div id="collapseProcesso" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<div class="row">
+									<div class="form-group col-md-3">
+										<label class="control-label required" for="nr_processo">N&uacute;mero Processo</label>
+										<input type="zoom" name="nr_processo" id="nr_processo"
+											data-zoom="{
+													'displayKey':'colleagueName',
+													'datasetId':'colleague',
+													'filterValues':'',
+													'placeholder':'Buscar pagamento',
+													'fields':[
+													{
+														'field':'colleagueName',
+														'label':'Nome do Respons�vel'
+													},
+													{
+														'field':'mail',
+														'label':'E-mail'
+													}
+													]
+												}" />
+									</div>
+									<div class="form-group col-md-4">
+										<label class="control-label" for="dt_processo">T&iacute;tulo Processo</label>
+										<input type="text" class="form-control" id="dt_processo" name="dt_processo" readonly />
+									</div>		
+									<div class="form-group col-md-5">
+										<label class="control-label required" for="nm_signatario">Signat&aacute;rio</label>
+										<input type="zoom" name="nm_signatario" id="nm_signatario"
+											data-zoom="{
+													'displayKey':'colleagueName',
+													'datasetId':'colleague',
+													'filterValues':'',
+													'placeholder':'Buscar pagamento',
+													'fields':[
+													{
+														'field':'colleagueName',
+														'label':'Nome do Respons�vel'
+													},
+													{
+														'field':'mail',
+														'label':'E-mail'
+													}
+													]
+												}" />
+									</div>								
+								</div>
+								<div class="row">
+									<div class="form-group col-md-12">
+										<label class="control-label" for="ds_processo">Descri&ccedil;&atilde;o Processo</label>
+										<textarea class="form-control" id="ds_processo" name="ds_processo" rows="10" readonly ></textarea>
+									</div>		
+									<div class="form-group col-md-2">
+										<label>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+										<button type="button" class="btn btn-primary" onclick="">Acessar Documentos</button>
+									</div>								
+								</div>							
+							</div>
+						</div>
+					</div>
+				</div>			
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,138 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+		<link type="text/css" rel="stylesheet" href="custom.css"/>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+		<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="fluig-style-guide">
+			<form name="form" role="form">
+				<div class="page-header">
+					<h1>APROVA&Ccedil;&Atilde;O DE PROCESSO</h1>
+					<div class="text-info">
+						<span class="fluigicon fluigicon-info-sign fluigicon-xs"></span>&nbsp;Os Campos com * s&atilde;o obrigat&oacute;rios
+					</div>
+				</div>
+				<!-- [Inicio] cabecalho da solicitacao -->
+				<div>
+					<!-- [Inicio] Processo -->
+					<div class="panel panel-info">
+						<div class="panel-heading" style="background-color: #0072b4">
+							<h3 class="panel-title">
+								<a class="collapse-icon up" data-toggle="collapse" data-parent="#accordion" href="#collapseCabecalho">
+									<span class="flaticon flaticon-message icon-sm"></span>&nbsp;Dados Solicita&ccedil;&atilde;o </a>
+							</h3>
+						</div>
+						<div id="collapseCabecalho" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<div class="row">
+									<div class="form-group col-md-3">
+										<label class="control-label" for="nr_solicitacao">N&uacute;mero Solicita&ccedil;&atilde;o</label>
+										<input type="text" class="form-control" id="nr_solicitacao" name="nr_solicitacao" readonly />
+									</div>
+									<div class="form-group col-md-7">
+										<label class="control-label" for="nm_solicitante">Solicitante</label>
+										<input type="text" class="form-control" id="nm_solicitante" name="nm_solicitante" readonly />
+										<input type="hidden" id="cd_solicitante" name="cd_solicitante" />
+										<input type="hidden" id="mail_solicitante" name="mail_solicitante" />
+									</div>
+									<div class="form-group col-md-2">
+										<label class="control-label" for="dt_solicitacao">Data Solicita&ccedil;&atilde;o</label>
+										<input type="text" class="form-control" id="dt_solicitacao" name="dt_solicitacao" readonly />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-info">
+						<div class="panel-heading" style="background-color: #0072b4">
+							<h3 class="panel-title">
+								<a class="collapse-icon up" data-toggle="collapse" data-parent="#accordion" href="#collapseProcesso">
+									<span class="flaticon flaticon-message icon-sm"></span>&nbsp;Dados Processo </a>
+							</h3>
+						</div>
+						<div id="collapseProcesso" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<div class="row">
+									<div class="form-group col-md-5">
+										<label class="control-label" for="nm_advogado">Advogado Respons&aacute;vel</label>
+										<input type="text" class="form-control" id="nm_advogado" name="nm_advogado" readonly />
+									</div>
+									<div class="form-group col-md-2">
+										<label class="control-label" for="cd_processo">C&oacute;digo Processo</label>
+										<input type="text" class="form-control" id="cd_processo" name="cd_processo" readonly />
+									</div>		
+									<div class="form-group col-md-2">
+										<label class="control-label" for="nr_processo">N&uacute;mero Processo</label>
+										<input type="text" class="form-control" id="nr_processo" name="nr_processo" readonly />
+									</div>	
+									<div class="form-group col-md-2">
+										<label>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+										<button type="button" class="btn btn-primary" onclick="">Acessar Documentos</button>
+									</div>	
+								</div>		
+								<div class="row">
+									<div class="form-group col-md-12">
+										<label class="control-label" for="ds_processo">Descri&ccedil;&atilde;o Processo</label>
+										<textarea class="form-control" id="ds_processo" name="ds_processo" rows="5" readonly ></textarea>
+									</div>									
+								</div>															
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-info" id="div_aprovacao">
+						<div class="panel-heading" style="background-color: #0072b4">
+							<h3 class="panel-title">
+								<a class="collapse-icon up" data-toggle="collapse" data-parent="#accordion" href="#collapseAprovacao">
+									<span class="flaticon flaticon-message icon-sm"></span>&nbsp;Aprova&ccedil;&atilde;o</a>
+							</h3>
+						</div>
+						<div id="collapseAprovacao" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-6 form-group">
+										<label class="control-label" for="nm_aprovador_interno">Aprovador</label>
+										<input type="text" class="form-control" name="nm_aprovador_interno" id="nm_aprovador_interno" readonly>
+										<input type="hidden" id="dataHoraAprovacao" name="dataHoraAprovacao" />
+									</div>
+									<div class="col-md-2 form-group">
+										<label class="control-label" for="dt_aprova_aprovacao">Data</label>
+										<input type="text" class="form-control" name="dt_aprova_aprovacao" id="dt_aprova_aprovacao" readonly>
+									</div>
+									<div class="col-md-2 form-group">
+										<label class="control-label" for="hr_aprova_aprovacao">Hora</label>
+										<input type="text" class="form-control" name="hr_aprova_aprovacao" id="hr_aprova_aprovacao" readonly>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 form-group">
+										<label class="control-label required">Aprovar Processo?</label>
+										<div class="input-group">
+											<div class="custom-radio custom-radio-inline custom-radio-primary">
+										        <input type="radio" name="rd_aprovacao_" value="sim" id="rd_aprovacao__sim" onclick="checkApproveRequired(this.name, 'ds_aprovacao_gerente')" />
+										        <label for="rd_aprovacao__sim">Sim</label>
+										    </div>
+											<div class="custom-radio custom-radio-inline custom-radio-primary">
+										        <input type="radio" name="rd_aprovacao_" value="nao" id="rd_aprovacao__nao" onclick="checkApproveRequired(this.name, 'ds_aprovacao_gerente')" />
+										        <label for="rd_aprovacao__nao">N&atilde;o</label>
+										    </div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 form-group">
+										<label class="control-label">Justificativa</label>
+										<textarea class="form-control" rows="5" id="ds_aprovacao_gerente" name="ds_aprovacao_gerente"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>			
+			</form>
+		</div>
+	</body>
+</html>
