@@ -1,0 +1,21 @@
+/* Coloque aqui seu codigo CSS */
+.message{
+    margin-top: 10px;
+}
+
+.center-align{
+	text-align: center !important;
+}
+
+.btn-column{
+	text-align: center;
+}
+
+.right-align{
+	text-align: right !important;
+}
+
+.nopadding-sides{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
