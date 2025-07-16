@@ -1,0 +1,1621 @@
+<list>
+  <ProcessDefinition>
+    <processDefinitionPK>
+      <companyId>1</companyId>
+      <processId>SIGAJURI_AprovaFU</processId>
+    </processDefinitionPK>
+    <processDescription>Atividades SIGAJURI</processDescription>
+    <instruction></instruction>
+    <active>true</active>
+    <publicProcess>true</publicProcess>
+    <volumeId>Default</volumeId>
+    <categoryId>TOTVS Juridico</categoryId>
+    <managerEngineAllocationId></managerEngineAllocationId>
+    <snapshotFrequency>0</snapshotFrequency>
+    <baseDay>0</baseDay>
+    <baseMonth>0</baseMonth>
+    <periodId>Default</periodId>
+    <uniqueCardVersion>true</uniqueCardVersion>
+    <keyWord></keyWord>
+    <complementsLevel>0</complementsLevel>
+    <notifyRequisitionerComplements>false</notifyRequisitionerComplements>
+    <notifyManagerComplements>false</notifyManagerComplements>
+    <deadlineTime>0</deadlineTime>
+    <warningDeadlineTime>0</warningDeadlineTime>
+    <notifyAuthorityComplements>false</notifyAuthorityComplements>
+  </ProcessDefinition>
+  <ProcessDefinitionVersion>
+    <processDefinitionVersionPK>
+      <companyId>1</companyId>
+      <processId>Atividades SIGAJURI</processId>
+      <version>1</version>
+    </processDefinitionVersionPK>
+    <versionDescription></versionDescription>
+    <formId>9</formId>
+    <editionMode>true</editionMode>
+    <updateAttachmentsVersion>false</updateAttachmentsVersion>
+    <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
+    <active>true</active>
+    <blockedVersion>false</blockedVersion>
+    <counterSign>false</counterSign>
+    <openInstances>0</openInstances>
+    <bpmnVersion>2</bpmnVersion>
+    <processStates/>
+    <favorito>false</favorito>
+    <inheritFormSecurity>false</inheritFormSecurity>
+    <mobileReady>false</mobileReady>
+  </ProcessDefinitionVersion>
+  <list>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <sequence>1</sequence>
+      </processStatePK>
+      <stateName>Início</stateName>
+      <stateDescription>Início</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>true</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>103</positionX>
+      <positionY>91</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>10</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <sequence>2</sequence>
+      </processStatePK>
+      <stateName>Verifica Aprovação</stateName>
+      <stateDescription>Verifica Aprovação</stateDescription>
+      <instruction>Tarefa automática que determina se o Follow-up será executado ou se ele já foi executado e precisa ir para aprovação.</instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;2&lt;/BaseActivity&gt;&lt;Returns&gt;Last&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>292</positionX>
+      <positionY>74</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <sequence>4</sequence>
+      </processStatePK>
+      <stateName>Pendente</stateName>
+      <stateDescription>Pendente</stateDescription>
+      <instruction>Tarefa que espera a execução do follow-up por parte do responsável. O responsável deve preencher o campo de observações do executor para concluir a execução do follow-up.</instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Campo Formulário</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;FormField&gt;sExecutorFluig&lt;/FormField&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>586</positionX>
+      <positionY>81</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <sequence>6</sequence>
+      </processStatePK>
+      <stateName>Aprovação</stateName>
+      <stateDescription>Aprovação</stateDescription>
+      <instruction>Tarefa que controla a aprovação do follow-up executado pelo responsável/executor.</instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>586</positionX>
+      <positionY>191</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <sequence>11</sequence>
+      </processStatePK>
+      <stateName>Aprovado</stateName>
+      <stateDescription>Aprovado</stateDescription>
+      <instruction>Tarefa automática que recebe a aprovação do follow-up e valida se existem mais aprovadores que precisam aprovar a atividade também.</instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>586</positionX>
+      <positionY>302</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <sequence>16</sequence>
+      </processStatePK>
+      <stateName>Concluído</stateName>
+      <stateDescription>Concluído</stateDescription>
+      <instruction>tarefa automática que valida após a execução do follow-up se a tarefa precisa ou não de aprovação.</instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>292</positionX>
+      <positionY>191</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <sequence>9</sequence>
+      </processStatePK>
+      <stateName>Fim</stateName>
+      <stateDescription>Fim</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>327</positionX>
+      <positionY>312</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>6</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <sequence>23</sequence>
+      </processStatePK>
+      <stateName>Fim com cancelamento de processo</stateName>
+      <stateDescription>Fim com cancelamento de processo</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>744</positionX>
+      <positionY>91</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>6</stateType>
+      <bpmnType>65</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+  </list>
+  <list/>
+  <list>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <linkSequence>3</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>1</initialStateSequence>
+      <finalStateSequence>2</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <linkSequence>5</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>2</initialStateSequence>
+      <finalStateSequence>4</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Execução</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <linkSequence>7</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>2</initialStateSequence>
+      <finalStateSequence>16</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Aprovação</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <linkSequence>10</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>4</initialStateSequence>
+      <finalStateSequence>16</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Executado</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <linkSequence>12</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>11</initialStateSequence>
+      <finalStateSequence>9</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <linkSequence>13</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>11</initialStateSequence>
+      <finalStateSequence>6</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <linkSequence>17</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>16</initialStateSequence>
+      <finalStateSequence>9</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Não precisa aprovar</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <linkSequence>18</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>16</initialStateSequence>
+      <finalStateSequence>6</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Precisa aprovar</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <linkSequence>19</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>6</initialStateSequence>
+      <finalStateSequence>4</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Reprovar</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+      <expression></expression>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <linkSequence>20</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>6</initialStateSequence>
+      <finalStateSequence>11</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Aprovar</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+      <expression></expression>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <linkSequence>22</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>4</initialStateSequence>
+      <finalStateSequence>23</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+  </list>
+  <list/>
+  <list>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterStateEntry</eventId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterStateEntry(sequenceId){&#xd;
+	var INICIO = 1;&#xd;
+	var APROVAFU = 2;&#xd;
+	var APROVACAO = 6;&#xd;
+	var EXECUCAO = 4;&#xd;
+	var APROVAFU2 = 11;&#xd;
+	var EXECUTADO = 16;&#xd;
+	var FIM = 9;&#xd;
+	var EXECCANCEL = 23;&#xd;
+	&#xd;
+	var step = parseInt(getValue(&quot;WKCurrentState&quot;));&#xd;
+	var users = new java.util.ArrayList();&#xd;
+	var nextState = null;&#xd;
+	var ExecAprova = null;&#xd;
+	var sDocs = &quot;0&quot;;&#xd;
+	var sObs = null;&#xd;
+	var sStatusAtividade = &quot;&quot;;&#xd;
+	&#xd;
+	log.info(&quot;*** afterStateEntry: Iniciando. Atividade: &quot; + step + &quot;/Sequence Id: &quot; + sequenceId);&#xd;
+	&#xd;
+	switch(step){&#xd;
+	case 0:&#xd;
+	case INICIO:&#xd;
+		break;&#xd;
+	case APROVAFU:			&#xd;
+		hAPI.setCardValue(&quot;numSolic&quot;, getValue(&quot;WKNumProces&quot;));&#xd;
+		hAPI.setCardValue(&quot;dtInicial&quot;, getCurrentDate());&#xd;
+		//hAPI.setCardValue(&quot;sStatusAtividade&quot;, sStatusAtividade);&#xd;
+		hAPI.setCardValue(&quot;sSolicitante&quot;, getUserNameByMail(hAPI.getCardValue(&quot;cdSolicitante&quot;)));&#xd;
+		hAPI.setCardValue(&quot;sUserExec&quot;, getUserNameByMail(hAPI.getCardValue(&quot;cdUserExec&quot;)));&#xd;
+		hAPI.setCardValue(&quot;sExecutorFluig&quot;, getColleagueIdByMail(hAPI.getCardValue(&quot;cdUserExec&quot;)));&#xd;
+		hAPI.setCardValue(&quot;sOrigem&quot;,&quot;&quot;);&#xd;
+		&#xd;
+		ExecAprova = hAPI.getCardValue(&quot;cdExecAprova&quot;);&#xd;
+		nextState = (ExecAprova==1?EXECUCAO:EXECUTADO);&#xd;
+		users.clear();&#xd;
+		&#xd;
+		if (nextState != EXECUCAO){&#xd;
+			//se o estado já for de executado significa que veio executado do Protheus&#xd;
+			users.add(&quot;System:Auto&quot;);&#xd;
+			hAPI.setCardValue(&quot;sOrigem&quot;,&quot;SIGAJURI&quot;);&#xd;
+			hAPI.setCardValue(&quot;sObsExecutor&quot;,&quot;Tarefa executada via SIGAJURI.&quot;);&#xd;
+		}else{&#xd;
+			users.add(hAPI.getCardValue(&quot;sExecutorFluig&quot;));&#xd;
+		}&#xd;
+		hAPI.setAutomaticDecision(nextState, users, &quot;Decisao Automatica: &quot; + (nextState==EXECUCAO?&quot;Encaminhado para Execução.&quot;:&quot;Encaminhado para Aprovação.&quot;));&#xd;
+		break;&#xd;
+	case APROVACAO:&#xd;
+		hAPI.setCardValue(&quot;sExecutorFluig&quot;, getColleagueIdByMail(hAPI.getCardValue(&quot;cdUserExec&quot;)));&#xd;
+		setDueDate(hAPI.getCardValue(&quot;dtPrazoAprova&quot;),hAPI.getCardValue(&quot;sExecutorFluig&quot;));&#xd;
+		break;&#xd;
+	case EXECUCAO:&#xd;
+		log.info(&quot;*** voltou execução - valor sOrigem:&quot; + hAPI.getCardValue(&quot;sOrigem&quot;));&#xd;
+		if (hAPI.getCardValue(&quot;sOrigem&quot;) == &quot;FLUIG&quot;){&#xd;
+						&#xd;
+			if (!updateFollowUpSIGAJURI(hAPI.getCardValue(&quot;cdFollowUp&quot;), 1, hAPI.getCardValue(&quot;sObsAprovador&quot;))){&#xd;
+				log.error(&quot;*** afterStateEntry, EXECUÇÃO : SIGAJURI NAO ATUALIZADO!&quot;);&#xd;
+				throw &quot;Erro na comunicação com o SIGAJURI&quot;;&#xd;
+			} else {			&#xd;
+				hAPI.setCardValue(&quot;cdStatusAtividade&quot;,1);&#xd;
+				hAPI.setCardValue(&quot;sStatusAtividade&quot;,&quot;Pendente&quot;);&#xd;
+			}&#xd;
+			hAPI.setCardValue(&quot;sOrigem&quot;,&quot;&quot;);&#xd;
+		}&#xd;
+		break;&#xd;
+		&#xd;
+	case EXECUTADO:		&#xd;
+		nextState = (AprovaFU()?APROVACAO:FIM);&#xd;
+		users.clear();&#xd;
+		users.add(getColleagueIdByMail(hAPI.getCardValue(&quot;cdSolicitante&quot;)));&#xd;
+		&#xd;
+		//Atualiza o status da atividade&#xd;
+		if (nextState == FIM) {&#xd;
+			hAPI.setCardValue(&quot;cdStatusAtividade&quot;,2);&#xd;
+			hAPI.setCardValue(&quot;sStatusAtividade&quot;,&quot;Concluído&quot;);&#xd;
+		}&#xd;
+		else {&#xd;
+			hAPI.setCardValue(&quot;cdStatusAtividade&quot;,4);&#xd;
+			hAPI.setCardValue(&quot;sStatusAtividade&quot;,&quot;Em Aprovação&quot;);&#xd;
+		}&#xd;
+				&#xd;
+		//se o campo sOrigem estiver preenchido, significa que a alteração de status foi feita pelo SIGAJURI.&#xd;
+		if (hAPI.getCardValue(&quot;sOrigem&quot;) == null || hAPI.getCardValue(&quot;sOrigem&quot;) == &quot;&quot;){&#xd;
+			&#xd;
+			//grava documentos na pasta do caso caso seja o final do follow-up.&#xd;
+			if (nextState==FIM){&#xd;
+				gravaDocs();&#xd;
+			}&#xd;
+			&#xd;
+			//Atualiza status no FW.&#xd;
+			if (updateFollowUpSIGAJURI(hAPI.getCardValue(&quot;cdFollowUp&quot;),hAPI.getCardValue(&quot;cdStatusAtividade&quot;), hAPI.getCardValue(&quot;sObsExecutor&quot;),hAPI.getCardValue(&quot;sDocs&quot;))) {&#xd;
+				hAPI.setCardValue(&quot;sOrigem&quot;,&quot;FLUIG&quot;);&#xd;
+				hAPI.setAutomaticDecision(nextState, (nextState==APROVACAO?getUsersAprovaFU(users):users), &quot;Decisao Automatica após Execução: &quot; + (nextState==APROVACAO?&quot;Encaminhado para aprovação.&quot;:&quot;Sem Aprovação.&quot;));&#xd;
+			}&#xd;
+			else{&#xd;
+				nextState = EXECUCAO;&#xd;
+				hAPI.setCardValue(&quot;cdStatusAtividade&quot;,1);&#xd;
+				hAPI.setCardValue(&quot;sStatusAtividade&quot;,&quot;Pendente&quot;);&#xd;
+				hAPI.setAutomaticDecision(nextState, users, &quot;Erro na comunicação com o SIGAJURI. Retornado ao estado de execução.&quot;);&#xd;
+				&#xd;
+				throw &quot;Erro na comunicação com o SIGAJURI&quot;;&#xd;
+			}			&#xd;
+		}else{&#xd;
+			//limpa o campo de origem&#xd;
+			hAPI.setCardValue(&quot;sOrigem&quot;,&quot;&quot;);&#xd;
+			hAPI.setAutomaticDecision(nextState, (nextState==APROVACAO?getUsersAprovaFU(users):users), &quot;Tarefa concluída através do SIGAJURI. Decisao Automatica após Execução: &quot; + (nextState==APROVACAO?&quot;Encaminhado para aprovação.&quot;:&quot;Sem Aprovação.&quot;));&#xd;
+		}&#xd;
+		&#xd;
+				&#xd;
+		break;&#xd;
+	case APROVAFU2:&#xd;
+		var lTarefa = false;&#xd;
+		&#xd;
+		nextState = (AprovaFU2()?APROVACAO:FIM);&#xd;
+		users.clear();&#xd;
+		users.add(getColleagueIdByMail(hAPI.getCardValue(&quot;cdSolicitante&quot;)));&#xd;
+				&#xd;
+		//Atualiza o status da atividade&#xd;
+		if (nextState == FIM) {&#xd;
+			hAPI.setCardValue(&quot;cdStatusAtividade&quot;,2);&#xd;
+			hAPI.setCardValue(&quot;sStatusAtividade&quot;,&quot;Concluído&quot;);&#xd;
+		}&#xd;
+		else {&#xd;
+			hAPI.setCardValue(&quot;cdStatusAtividade&quot;,4);&#xd;
+			hAPI.setCardValue(&quot;sStatusAtividade&quot;,&quot;Em Aprovação&quot;);&#xd;
+		}&#xd;
+		&#xd;
+		//Atualiza status no FW.&#xd;
+		if (nextState == FIM){&#xd;
+			ExecAprova = hAPI.getCardValue(&quot;cdExecAprova&quot;);&#xd;
+			sObs = (ExecAprova==1?hAPI.getCardValue(&quot;sObsExecutor&quot;):hAPI.getCardValue(&quot;sObsAprovador&quot;));&#xd;
+			sObs = &quot;&quot;;&#xd;
+			sObs = &quot;Observações Executor :&quot; + hAPI.getCardValue(&quot;sObsExecutor&quot;) ;&#xd;
+			&#xd;
+			if (hAPI.getCardValue(&quot;sObsAprovador&quot;) != null &amp;&amp; hAPI.getCardValue(&quot;sObsAprovador&quot;)!= &quot;&quot;){&#xd;
+				sObs = &quot;Observações Executor :&quot; + hAPI.getCardValue(&quot;sObsExecutor&quot;) +&quot;\n Observações Aprovador:&quot; + hAPI.getCardValue(&quot;sObsAprovador&quot;);	&#xd;
+			}&#xd;
+						&#xd;
+			//grava documentos na pasta do caso caso seja o final do follow-up.&#xd;
+			gravaDocs();&#xd;
+			&#xd;
+			if (updateFollowUpSIGAJURI(hAPI.getCardValue(&quot;cdFollowUp&quot;),hAPI.getCardValue(&quot;cdStatusAtividade&quot;), sObs,hAPI.getCardValue(&quot;sDocs&quot;), getMailByUserId(getValue(&quot;WKUser&quot;)))){&#xd;
+				lTarefa = true; //marca na variável que o status foi mudado com sucesso no SIGAJURI.&#xd;
+			} else {&#xd;
+				log.info(&quot;Erro AfterStateEntry ADR: Retorno negativo do SIGAJURI ao atualizar para FIM.&quot;);&#xd;
+			}&#xd;
+		}&#xd;
+		&#xd;
+		if (lTarefa || nextState== APROVACAO){&#xd;
+			//Avança a tarefa para o final ou aprovação novamente.&#xd;
+			hAPI.setAutomaticDecision(nextState, (nextState==APROVACAO?getUsersAprovaFU(users):users), &quot;Decisao Automatica após Aprovação: &quot; + (nextState==APROVACAO?(&quot;Encaminhado para o próximo nível de aprovação. Observações registradas:&quot;+hAPI.getCardValue(&quot;sObsAprovador&quot;)):&quot;Aprovado em definitivo.&quot;));&#xd;
+		}&#xd;
+		&#xd;
+		//limpa o campo de aprovador caso a tarefa precise de mais uma aprovação.&#xd;
+		if (nextState== APROVACAO){&#xd;
+			hAPI.setCardValue(&quot;sObsAprovador&quot;,&quot;&quot;);&#xd;
+		}&#xd;
+			&#xd;
+		&#xd;
+		break;&#xd;
+	case EXECCANCEL:&#xd;
+		//faz o cancelamento do follow-up no SIGAJURI&#xd;
+		&#xd;
+		var cdStatusAtividade = &quot;&quot;;&#xd;
+		var cdFollowUp = &quot;&quot;;&#xd;
+		var sObsExec = &quot;&quot;;&#xd;
+		var sStatusAtividade = &quot;&quot;;&#xd;
+		var bUpdateOk = false;&#xd;
+		&#xd;
+		cdStatusAtividade = &quot;3&quot;;&#xd;
+		sStatusAtividade = &quot;Cancelada&quot;;&#xd;
+		&#xd;
+		if (hAPI.getCardValue(&quot;cdStatusAtividade&quot;) != cdStatusAtividade){&#xd;
+								&#xd;
+			cdFollowUp = hAPI.getCardValue(&quot;cdFollowUp&quot;);&#xd;
+			sObsExec = hAPI.getCardValue(&quot;sObsExecutor&quot;);&#xd;
+			&#xd;
+			bUpdateOk = updateFollowUpSIGAJURI(cdFollowUp, cdStatusAtividade, sObsExec);&#xd;
+			&#xd;
+			if (!bUpdateOk){&#xd;
+				log.info(&quot;*** EXECCANCEL: SIGAJURI NAO ATUALIZADO!&quot;);&#xd;
+			} else {			&#xd;
+				hAPI.setCardValue(&quot;cdStatusAtividade&quot;, cdStatusAtividade);&#xd;
+				hAPI.setCardValue(&quot;sStatusAtividade&quot;, sStatusAtividade);&#xd;
+			}&#xd;
+		}&#xd;
+		&#xd;
+		break;&#xd;
+	}&#xd;
+}&#xd;
+&#xd;
+function getCurrentDate(){&#xd;
+	var Now = new Date();&#xd;
+	var yyyy = Now.getFullYear().toString();&#xd;
+	var mm = (Now.getMonth()+1).toString();&#xd;
+	var dd  = Now.getDate().toString();&#xd;
+	return (dd[1]?dd:&quot;0&quot;+dd[0]) + &quot;/&quot; + (mm[1]?mm:&quot;0&quot;+mm[0]) + &quot;/&quot; + yyyy;&#xd;
+}&#xd;
+&#xd;
+function getUsersAprovaFU(users){&#xd;
+	var sConfig = null;&#xd;
+	if (hAPI.getCardValue(&quot;sConfigs&quot;) != null){&#xd;
+		sConfig = hAPI.getCardValue(&quot;sConfigs&quot;).split(&quot;,&quot;);&#xd;
+&#xd;
+		if (!(sConfig[0] == null || sConfig[0] == &quot;&quot;)){&#xd;
+			var pool = getGrupoRole(parseInt(sConfig[0]));&#xd;
+			if (pool != null){&#xd;
+				log.info(&quot;*** getUsersAprovaFU: Adicionando Grupo e Papel ou Aprovador a Pool.&quot;);&#xd;
+				users.clear();&#xd;
+&#xd;
+				if ( pool.getValue(0, &quot;cdAprovadorSIGAJURI&quot;) == &quot;0&quot; || pool.getValue(0, &quot;cdAprovadorSIGAJURI&quot;) == &quot;&quot; ){&#xd;
+					if (pool.getValue(0,&quot;cdPapel&quot;) &gt; &quot;&quot;){&#xd;
+						users = getCommonUsers(pool.getValue(0, &quot;cdGrupo&quot;), pool.getValue(0, &quot;cdPapel&quot;), users);&#xd;
+					}else{ //valida se o papel não esta preenchido para mandar ao pool de usuários do grupo&#xd;
+						users.add(&quot;Pool:Group:&quot;+pool.getValue(0, &quot;cdGrupo&quot;));&#xd;
+					}&#xd;
+				}else{&#xd;
+					users.add( getAprovadorSigajuri(pool.getValue(0, &quot;cdAprovadorSIGAJURI&quot;)) );&#xd;
+				}&#xd;
+			}&#xd;
+			var novoConfigs = new Array();&#xd;
+			for (var i = 1; i &lt; sConfig.length; i++){&#xd;
+				novoConfigs.push(sConfig[i]);&#xd;
+			}&#xd;
+			hAPI.setCardValue(&quot;sConfigs&quot;, novoConfigs.join(&quot;,&quot;));&#xd;
+		}&#xd;
+	}&#xd;
+	&#xd;
+	return users;&#xd;
+}&#xd;
+&#xd;
+function getGrupoRole(cardId){&#xd;
+	log.info(&quot;*** getGrupoRole: Recuperando Grupo e Papel ou Aprovador.&quot;);&#xd;
+	var fields = new Array();&#xd;
+	var constraints = new Array();&#xd;
+	var sort = new Array();&#xd;
+	var configs = null;&#xd;
+	&#xd;
+	fields.push(&quot;cdGrupo&quot;);&#xd;
+	fields.push(&quot;cdPapel&quot;);&#xd;
+	fields.push(&quot;cdAprovadorSIGAJURI&quot;);&#xd;
+	&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;metadata#active&quot;, true, true, ConstraintType.MUST));&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;metadata#id&quot;, cardId, cardId, ConstraintType.MUST));&#xd;
+&#xd;
+	try{&#xd;
+		configs = DatasetFactory.getDataset(&quot;wcmSIGAJURI_FollowUp&quot;, fields, constraints, sort);&#xd;
+	}catch(e){&#xd;
+		log.error(&quot;*** getGrupoRole: Falha ao recuperar o dataset.&quot;);&#xd;
+		log.error(&quot;*** getGrupoRole: ERROR: &quot; + e.message);&#xd;
+	}&#xd;
+	return configs;&#xd;
+}&#xd;
+&#xd;
+function getCommonUsers(Group, Role, users){&#xd;
+	var fields = new Array();&#xd;
+	var constraints = new Array();&#xd;
+	var sort = new Array();&#xd;
+	var dsGroupUsers = null;&#xd;
+	var dsRoleUsers = null;&#xd;
+	&#xd;
+	log.info(&quot;*** getCommonUsers: Recuperando Usuarios do grupo &quot; + Group);&#xd;
+	&#xd;
+	log.info(&quot;*** getCommonUsers: Campos Group.&quot;);&#xd;
+	fields.push(&quot;colleagueGroupPK.colleagueId&quot;);&#xd;
+	&#xd;
+	log.info(&quot;*** getCommonUsers: Constraints Group.&quot;);&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;colleagueGroupPK.companyId&quot;, getValue(&quot;WKCompany&quot;), getValue(&quot;WKCompany&quot;), ConstraintType.MUST));&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;colleagueGroupPK.groupId&quot;, Group, Group, ConstraintType.MUST));&#xd;
+	&#xd;
+	try{&#xd;
+		dsGroupUsers = DatasetFactory.getDataset(&quot;colleagueGroup&quot;, fields, constraints, sort);&#xd;
+	}catch(e){&#xd;
+		log.error(&quot;*** getCommonUsers: Falha ao recuperar o dataset Group.&quot;);&#xd;
+		log.error(&quot;*** getCommonUsers: ERROR: &quot; + e.message);&#xd;
+	}&#xd;
+	&#xd;
+	log.info(&quot;*** getCommonUsers: Recuperando Usuarios do papel  &quot; + Role);&#xd;
+	&#xd;
+	fields = new Array();&#xd;
+	constraints = new Array();&#xd;
+	&#xd;
+	log.info(&quot;*** getCommonUsers: Campos Role.&quot;);&#xd;
+	fields.push(&quot;workflowColleagueRolePK.colleagueId&quot;);&#xd;
+	&#xd;
+	log.info(&quot;*** getCommonUsers: Constraints Role.&quot;);&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;workflowColleagueRolePK.companyId&quot;, getValue(&quot;WKCompany&quot;), getValue(&quot;WKCompany&quot;), ConstraintType.MUST));&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;workflowColleagueRolePK.roleId&quot;, Role, Role, ConstraintType.MUST));&#xd;
+	&#xd;
+	try{&#xd;
+		dsRoleUsers = DatasetFactory.getDataset(&quot;workflowColleagueRole&quot;, fields, constraints, sort);&#xd;
+	}catch(e){&#xd;
+		log.error(&quot;*** getCommonUsers: Falha ao recuperar o dataset Role.&quot;);&#xd;
+		log.error(&quot;*** getCommonUsers: ERROR: &quot; + e.message);&#xd;
+	}&#xd;
+&#xd;
+	&#xd;
+	if (dsGroupUsers &amp;&amp; dsGroupUsers.rowsCount &gt; 0 &amp;&amp; dsRoleUsers &amp;&amp; dsRoleUsers.rowsCount &gt; 0){&#xd;
+		for (var i = 0; i &lt; dsGroupUsers.rowsCount; i++){&#xd;
+			for (var j = 0; j &lt; dsRoleUsers.rowsCount; j++){&#xd;
+				if (dsGroupUsers.getValue(i, &quot;colleagueGroupPK.colleagueId&quot;) == dsRoleUsers.getValue(j, &quot;workflowColleagueRolePK.colleagueId&quot;)){&#xd;
+					log.info(&quot;*** getCommonUsers: Adicionando Usuario &quot; + dsGroupUsers.getValue(i, &quot;colleagueGroupPK.colleagueId&quot;));&#xd;
+					users.add(dsGroupUsers.getValue(i, &quot;colleagueGroupPK.colleagueId&quot;));&#xd;
+					break;&#xd;
+				}&#xd;
+			}&#xd;
+		}&#xd;
+	}&#xd;
+	&#xd;
+	if (users.isEmpty()){&#xd;
+		log.info(&quot;*** getCommonUsers: Lista Vazia, Adicionando Usuario Executor&quot;);&#xd;
+		users.add(hAPI.getCardValue(&quot;cdUserExec&quot;));&#xd;
+	}&#xd;
+	&#xd;
+	return users;&#xd;
+}&#xd;
+&#xd;
+function getAprovadorSigajuri(cdAprovadorSIGAJURI){&#xd;
+	var constraints = new Array();&#xd;
+	var response = null;&#xd;
+	var user = &quot;&quot;;&#xd;
+	&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;sFilial&quot;			 	, hAPI.getCardValue(&quot;sFilial&quot;)	, hAPI.getCardValue(&quot;sFilial&quot;)	, ConstraintType.MUST));&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;sCajuri&quot;				, hAPI.getCardValue(&quot;sCajuri&quot;)	, hAPI.getCardValue(&quot;sCajuri&quot;)	, ConstraintType.MUST));&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;cdAprovadorSIGAJURI&quot;	, cdAprovadorSIGAJURI			, cdAprovadorSIGAJURI			, ConstraintType.MUST));&#xd;
+		&#xd;
+	try{&#xd;
+		response = DatasetFactory.getDataset(&quot;dsAprovadorSigajuri&quot;, null, constraints, null);&#xd;
+	}catch(e){&#xd;
+		log.error(&quot;** dsAprovadorSigajuri: ERRO: &quot; + e.message);&#xd;
+	}&#xd;
+&#xd;
+	user = getColleagueIdByMail( response.getValue(0, &quot;sEmailAprovador&quot;) );&#xd;
+	&#xd;
+	log.info(&quot;*** getAprovadorSigajuri - Recuperando aprovador SIGAJURI: &quot; + user);	&#xd;
+	&#xd;
+	return user;&#xd;
+}&#xd;
+&#xd;
+function getUserNameByLogin(Login){&#xd;
+	var fields = new Array();&#xd;
+	var constraints = new Array();&#xd;
+	var sort = new Array();&#xd;
+	var colleagues = null;&#xd;
+	var userName = Login;&#xd;
+	&#xd;
+	fields.push(&quot;colleagueName&quot;);&#xd;
+	&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;active&quot;, true, true, ConstraintType.MUST));&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;login&quot;, Login, Login, ConstraintType.MUST));&#xd;
+	&#xd;
+	try{&#xd;
+		log.info(&quot;*** getUserNameByLogin: Chamando Dataset.&quot;);&#xd;
+		colleagues = DatasetFactory.getDataset(&quot;colleague&quot;, fields, constraints, sort);&#xd;
+		&#xd;
+		log.info(&quot;*** getUserNameByLogin: Processando UserName.&quot;);&#xd;
+		if (colleagues &amp;&amp; colleagues.rowsCount &gt; 0){&#xd;
+			userName = colleagues.getValue(0, &quot;colleagueName&quot;);&#xd;
+		}&#xd;
+	}catch(e){&#xd;
+		log.error(&quot;*** getUserNameByLogin: Falha ao recuperar o dataset.&quot;);&#xd;
+		log.error(&quot;*** getUserNameByLogin: ERROR: &quot; + e.message);&#xd;
+	}&#xd;
+	&#xd;
+	return userName;&#xd;
+}&#xd;
+&#xd;
+function AprovaFU(){	&#xd;
+	var cdAssJur = hAPI.getCardValue(&quot;cdAssJur&quot;);&#xd;
+	var cdTipoFU = hAPI.getCardValue(&quot;cdTipoFU&quot;);&#xd;
+	var configs = null;&#xd;
+	var result = new Array();&#xd;
+	var nValor1 = 0;&#xd;
+	var nValor2 = 0;&#xd;
+	var cTmp = &quot;&quot;;&#xd;
+	var nValor = 0;&#xd;
+	var nLength = 0;&#xd;
+	&#xd;
+	var fields = new Array(&quot;metadata#id&quot;, &quot;sPrioridade&quot;,&quot;cdAssJur&quot;,&quot;sFaixaInicial&quot;,&quot;sFaixaFinal&quot;);&#xd;
+	var constraints = new Array();&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;metadata#active&quot;, true, true, ConstraintType.MUST));&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;cdTipoFU&quot;, cdTipoFU, cdTipoFU, ConstraintType.MUST));&#xd;
+	var order = new Array(&quot;sPrioridade&quot;);&#xd;
+	&#xd;
+	//Converte o valor recebido no follow-up&#xd;
+	cTmp = hAPI.getCardValue(&quot;sValor&quot;);&#xd;
+	&#xd;
+	nValor = parseFloat(cTmp);&#xd;
+	&#xd;
+	if (isNaN(nValor)){&#xd;
+		nValor = 0;&#xd;
+		log.error(&quot;*** AprovaFU: Valor do FW zerado.&quot;);&#xd;
+	}&#xd;
+	&#xd;
+	&#xd;
+	try {&#xd;
+		configs = DatasetFactory.getDataset(&quot;wcmSIGAJURI_FollowUp&quot;, fields, constraints, order);&#xd;
+	}catch(e){&#xd;
+		log.error(&quot;*** AprovaFU: Falha ao buscar dataset.&quot;);&#xd;
+		log.error(&quot;*** AprovaFU: ERRO: &quot; + e.message);&#xd;
+	}&#xd;
+	if (!configs || configs.rowsCount &lt;= 0){&#xd;
+		log.info(&quot;*** AprovaFU: Nenhuma configuração encontrada. Não havera aprovacao.&quot;);&#xd;
+		return false;&#xd;
+	}&#xd;
+	&#xd;
+	log.info(&quot;*** AprovaFU: Processando dados encontrados.&quot;);&#xd;
+	for (var i = 0; i &lt; configs.rowsCount; i++){&#xd;
+		log.info(&quot;*** AprovaFU: Avaliando &quot; + configs.getValue(i, &quot;cdAssJur&quot;));&#xd;
+		if (configs.getValue(i, &quot;cdAssJur&quot;) == &quot;*&quot; || configs.getValue(i, &quot;cdAssJur&quot;) == cdAssJur){&#xd;
+			&#xd;
+			//Valida os valores cadastrados&#xd;
+			cTmp = configs.getValue(i, &quot;sFaixaInicial&quot;);&#xd;
+			&#xd;
+			if (cTmp == &quot;&quot;){&#xd;
+				cTmp = &quot;0&quot;;&#xd;
+			}&#xd;
+			&#xd;
+			if (cTmp != null){&#xd;
+				cTmp = cTmp.replace(&quot;.&quot;,&quot;&quot;);&#xd;
+				cTmp = cTmp.replace(&quot;,&quot;,&quot;.&quot;);&#xd;
+			}else{&#xd;
+				cTmp = &quot;&quot;;&#xd;
+			}&#xd;
+				&#xd;
+			nValor1 = parseFloat(cTmp);&#xd;
+						&#xd;
+			cTmp = configs.getValue(i, &quot;sFaixaFinal&quot;);&#xd;
+			&#xd;
+			if (cTmp == &quot;&quot;){&#xd;
+				cTmp = &quot;0&quot;;&#xd;
+			}&#xd;
+			&#xd;
+			if (cTmp != null){&#xd;
+				cTmp = cTmp.replace(&quot;.&quot;,&quot;&quot;);&#xd;
+				cTmp = cTmp.replace(&quot;,&quot;,&quot;.&quot;);&#xd;
+			}else{&#xd;
+				cTmp = &quot;&quot;;&#xd;
+			}&#xd;
+			&#xd;
+			nValor2 = parseFloat(cTmp);&#xd;
+			&#xd;
+			if (isNaN(nValor1)){&#xd;
+				nValor1 = 0;&#xd;
+			}&#xd;
+			&#xd;
+			if (isNaN(nValor2)){&#xd;
+				nValor2 = 0;&#xd;
+			}&#xd;
+			&#xd;
+			//Se a faixa final for 0, não considera&#xd;
+			if (nValor2 == 0 &amp;&amp; nValor == 0){&#xd;
+				result.push(configs.getValue(i, &quot;metadata#id&quot;));&#xd;
+				log.info(&quot;*** AprovaFU: Incluindo faixa 2 ou valor fw zerado &quot; + configs.getValue(i, &quot;metadata#id&quot;));&#xd;
+			}else if (nValor &gt;= nValor1 &amp;&amp; nValor &lt;= nValor2){&#xd;
+				result.push(configs.getValue(i, &quot;metadata#id&quot;));&#xd;
+				log.info(&quot;*** AprovaFU: Incluindo &quot; + configs.getValue(i, &quot;metadata#id&quot;));&#xd;
+			}&#xd;
+		}&#xd;
+	}&#xd;
+	&#xd;
+	nLength = result.length;&#xd;
+	if (nLength == null){&#xd;
+		nLength = 0;&#xd;
+	} &#xd;
+	&#xd;
+	//valida se houve rsultado válido&#xd;
+	if (nLength == 0){&#xd;
+		log.info(&quot;*** AprovaFU: Nenhuma configuração válida encontrada. Não haverá aprovação.&quot;);&#xd;
+		return false;&#xd;
+	}else{&#xd;
+		//linhas válidas.&#xd;
+		hAPI.setCardValue(&quot;sConfigs&quot;, result.join(&quot;,&quot;));&#xd;
+	}&#xd;
+	&#xd;
+	log.info(&quot;*** AprovaFU: Campo Configs salvo corretamente. Havera aprovacao.&quot;);&#xd;
+	&#xd;
+	return true;&#xd;
+	&#xd;
+}&#xd;
+&#xd;
+function AprovaFU2(){&#xd;
+	var sConfigs = new Array();&#xd;
+	if (hAPI.getCardValue(&quot;sConfigs&quot;) != null){&#xd;
+		sConfigs = hAPI.getCardValue(&quot;sConfigs&quot;).split(&quot;,&quot;);&#xd;
+		&#xd;
+		if (sConfigs[0] == null || sConfigs[0] == &quot;&quot;) return false;&#xd;
+	}else{&#xd;
+		return false;&#xd;
+	}&#xd;
+	&#xd;
+	&#xd;
+	return true;&#xd;
+}&#xd;
+&#xd;
+function getUserNameByMail(Email){&#xd;
+	log.info(&quot;*** getUserNameByMail: Recuperando UserName.&quot;);&#xd;
+	var fields = new Array();&#xd;
+	var constraints = new Array();&#xd;
+	var sort = new Array();&#xd;
+	var colleagues = null;&#xd;
+	var userName = Email;&#xd;
+	&#xd;
+	fields.push(&quot;colleagueName&quot;);&#xd;
+	&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;active&quot;, true, true, ConstraintType.MUST));&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;mail&quot;, Email, Email, ConstraintType.MUST));&#xd;
+	&#xd;
+	try{&#xd;
+		colleagues = DatasetFactory.getDataset(&quot;colleague&quot;, fields, constraints, sort);&#xd;
+		&#xd;
+		if (colleagues &amp;&amp; colleagues.rowsCount &gt; 0){&#xd;
+			userName = colleagues.getValue(0, &quot;colleagueName&quot;);&#xd;
+		}&#xd;
+	}catch(e){&#xd;
+		log.error(&quot;*** getUserNameByMail: Falha ao recuperar o dataset.&quot;);&#xd;
+		log.error(&quot;*** getUserNameByMail: ERROR: &quot; + e.message);&#xd;
+	}&#xd;
+	&#xd;
+	return userName;&#xd;
+}&#xd;
+&#xd;
+function getColleagueIdByMail(Email){&#xd;
+	var fields = new Array();&#xd;
+	var constraints = new Array();&#xd;
+	var sort = new Array();&#xd;
+	var colleagues = null;&#xd;
+	var colID = Email.trim();&#xd;
+	&#xd;
+	fields.push(&quot;colleaguePK.colleagueId&quot;);&#xd;
+	&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;active&quot;, true, true, ConstraintType.MUST));&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;mail&quot;, colID, colID, ConstraintType.MUST));&#xd;
+	&#xd;
+	try{&#xd;
+		&#xd;
+		colleagues = DatasetFactory.getDataset(&quot;colleague&quot;, fields, constraints, sort);&#xd;
+		&#xd;
+		if (colleagues &amp;&amp; colleagues.rowsCount &gt; 0){&#xd;
+			colID = colleagues.getValue(0, &quot;colleaguePK.colleagueId&quot;);&#xd;
+			log.info(&quot;*** getColleagueIdByMail: encontrei &quot; + colID);&#xd;
+		}else{&#xd;
+			log.info(&quot;*** getColleagueIdByMail: nao encontrei user.&quot;);&#xd;
+		}&#xd;
+	}catch(e){&#xd;
+		log.error(&quot;*** getColleagueIdByMail: Falha ao recuperar o dataset.&quot;);&#xd;
+		log.error(&quot;*** getColleagueIdByMail: ERROR: &quot; + e.message);&#xd;
+	}&#xd;
+	&#xd;
+	return colID;&#xd;
+}&#xd;
+&#xd;
+function gravaDocs(){&#xd;
+	var calendar = java.util.Calendar.getInstance().getTime();&#xd;
+	var attachments = hAPI.listAttachments();&#xd;
+	var nParentFolder =  Number(hAPI.getCardValue(&quot;sPastaCaso&quot;));&#xd;
+	var aDocs = [];&#xd;
+	var curDoc;&#xd;
+	var nLenAdoc = 0;&#xd;
+	&#xd;
+	if (hAPI.getCardValue(&quot;sDocs&quot;) != null &amp;&amp; hAPI.getCardValue(&quot;sDocs&quot;) != &quot;&quot;){&#xd;
+		aDocs = hAPI.getCardValue(&quot;sDocs&quot;).split(&quot;;&quot;);&#xd;
+	}&#xd;
+	&#xd;
+	for (var i = 0; i &lt; attachments.size(); i++) {&#xd;
+        var doc = attachments.get(i);&#xd;
+         &#xd;
+        if (doc.getDocumentType() != &quot;7&quot; &amp;&amp; aScan(aDocs,doc.getDocumentId()) == true) {&#xd;
+            continue;&#xd;
+        }&#xd;
+         &#xd;
+        curDoc = doc.getDocumentId();&#xd;
+        &#xd;
+        doc.setParentDocumentId(nParentFolder);&#xd;
+        doc.setVersionDescription(&quot;Processo: &quot; + getValue(&quot;WKNumProces&quot;));&#xd;
+        doc.setExpires(false);&#xd;
+        doc.setCreateDate(calendar);&#xd;
+        doc.setInheritSecurity(true);&#xd;
+        doc.setTopicId(1);&#xd;
+        doc.setUserNotify(false);&#xd;
+        doc.setValidationStartDate(calendar);&#xd;
+        doc.setVersionOption(&quot;0&quot;);&#xd;
+        doc.setUpdateIsoProperties(true);&#xd;
+         &#xd;
+        try{&#xd;
+        	hAPI.publishWorkflowAttachment(doc);&#xd;
+        	aDocs.push(curDoc);&#xd;
+        }catch (e) {&#xd;
+	        log.error(&quot;*** gravaDocs Problemas na criação do documento:\n&quot; + e);&#xd;
+        }&#xd;
+    }&#xd;
+    &#xd;
+	nLenAdoc = aDocs.length;&#xd;
+	if (nLenAdoc == null){&#xd;
+		nLenAdoc = 0;&#xd;
+	} &#xd;
+		&#xd;
+    log.info(&quot;**** docs gravados: &quot; + aDocs.length);&#xd;
+    &#xd;
+	if (nLenAdoc &gt; 0){&#xd;
+    	//grava documentos&#xd;
+    	hAPI.setCardValue(&quot;sDocs&quot;, aDocs.join(&quot;;&quot;));&#xd;
+    }&#xd;
+    &#xd;
+}&#xd;
+&#xd;
+function aScan(aX,cVal){&#xd;
+	var index;&#xd;
+		&#xd;
+	for	(index = 0; index &lt; aX.length; index++) {&#xd;
+	    if (aX[index] == cVal){&#xd;
+	    	return true;&#xd;
+	    }&#xd;
+	}&#xd;
+	&#xd;
+	return false;&#xd;
+}&#xd;
+&#xd;
+function setDueDate(sData,colleagueId){&#xd;
+	var segundos = 50400;&#xd;
+	var cSep = &quot;-&quot;;&#xd;
+	var nDia = 2;&#xd;
+	var nMes = 1;&#xd;
+	var nAno = 0;&#xd;
+	var processo = getValue(&quot;WKNumProces&quot;);&#xd;
+	&#xd;
+	if (sData != null &amp;&amp; sData.trim() != &quot;&quot; &amp;&amp; sData != &quot;&quot;){&#xd;
+		&#xd;
+		//valida o separador entre / e -&#xd;
+	    if (sData.indexOf(&quot;/&quot;)&gt;0){&#xd;
+    		cSep = &quot;/&quot;;&#xd;
+    		nAno = 2;&#xd;
+    		nDia = 0;&#xd;
+    	}&#xd;
+	    &#xd;
+		var dateParts = sData.split(cSep);	    &#xd;
+		var dtPrazo = new Date(dateParts[nAno], (dateParts[nMes] - 1), dateParts[nDia]); //Javascript reconhece 0 como janeiro, 1 fevereiro ....&#xd;
+		&#xd;
+		hAPI.setDueDate(processo, 0, colleagueId, dtPrazo, segundos);&#xd;
+	}&#xd;
+}&#xd;
+	</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeCancelProcess</eventId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeCancelProcess(colleagueId,processId){&#xd;
+	var cdStatusAtividade = &quot;&quot;;&#xd;
+	var cdFollowUp = &quot;&quot;;&#xd;
+	var sObsExec = &quot;&quot;;&#xd;
+	var sStatusAtividade = &quot;&quot;;&#xd;
+	var bUpdateOk = false;&#xd;
+	var isService = getValue(&apos;WKIsService&apos;);&#xd;
+	&#xd;
+	cdStatusAtividade = &quot;3&quot;;&#xd;
+	sStatusAtividade = &quot;Cancelada&quot;;&#xd;
+		&#xd;
+	if (hAPI.getCardValue(&quot;cdStatusAtividade&quot;) != cdStatusAtividade){&#xd;
+		cdFollowUp = hAPI.getCardValue(&quot;cdFollowUp&quot;);&#xd;
+		sObsExec = hAPI.getCardValue(&quot;sObsExecutor&quot;);&#xd;
+		&#xd;
+		if (hAPI.getCardValue(&quot;sObsAprovador&quot;) != null &amp;&amp; hAPI.getCardValue(&quot;sObsAprovador&quot;)!= &quot;&quot;){&#xd;
+			sObsExec = &quot;Observações Executor :&quot; + hAPI.getCardValue(&quot;sObsExecutor&quot;) +&quot;\n Observações Aprovador:&quot; + hAPI.getCardValue(&quot;sObsAprovador&quot;);	&#xd;
+		} &#xd;
+		&#xd;
+		//se não existe texto no campo de executor, usar a caixa de texto que o FLUIG apresenta.&#xd;
+		if (sObsExec == &quot;&quot; || sObsExec == null){&#xd;
+			sObsExec = getValue(&quot;WKUserComment&quot;);&#xd;
+		}&#xd;
+&#xd;
+		if (isService.toString() != &quot;false&quot;){//se estiver executando pelo protheus&#xd;
+			log.info(&quot;*** beforeCancelProcess: PROCESSO CANCELADO PELO SIGAJURI.&quot;);&#xd;
+		} else{//execução pelo Fluig&#xd;
+			&#xd;
+			bUpdateOk = updateFollowUpSIGAJURI(cdFollowUp, cdStatusAtividade, sObsExec, &quot;0&quot;, getMailByUserId(colleagueId));&#xd;
+			&#xd;
+			if (bUpdateOk){&#xd;
+				hAPI.setCardValue(&quot;cdStatusAtividade&quot;, cdStatusAtividade);&#xd;
+				hAPI.setCardValue(&quot;sStatusAtividade&quot;, sStatusAtividade);&#xd;
+			} &#xd;
+			else {			&#xd;
+				log.error(&quot;*** beforeCancelProcess: SIGAJURI NAO ATUALIZADO!&quot;);&#xd;
+				throw &quot;Atenção: Ocorreu um erro ao atualizar o SIGAJURI. Por favor, tente novamente mais tarde e caso o problema persista, entre em contato com o suporte.&quot;;												&#xd;
+			}						   &#xd;
+		}&#xd;
+	}&#xd;
+}&#xd;
+&#xd;
+function updateFollowUpSIGAJURI(cdFollowUp, cdStatusAtividade, sObsExec, sDocs, sMailExecutor){&#xd;
+	var fields = new Array();&#xd;
+	var constraints = new Array();&#xd;
+	var sort = new Array(&quot;retorno&quot;);&#xd;
+	var response = null;&#xd;
+	var sFilial = hAPI.getCardValue(&quot;sFilial&quot;);&#xd;
+	&#xd;
+	if (sDocs === undefined) {&#xd;
+        sDocs = &quot;0&quot;;&#xd;
+	}&#xd;
+&#xd;
+	if (sMailExecutor === undefined) {&#xd;
+        sMailExecutor = &quot;&quot;;&#xd;
+	}	&#xd;
+&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;sFollowUp&quot;, cdFollowUp, cdFollowUp, ConstraintType.MUST));&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;sStatus&quot;, cdStatusAtividade, cdStatusAtividade, ConstraintType.MUST));&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;sObsExec&quot;, sObsExec, sObsExec, ConstraintType.MUST));&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;sDocs&quot;, sDocs, sDocs, ConstraintType.MUST));&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;sFilial&quot;, sFilial, sFilial, ConstraintType.MUST));&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;sMailExecutor&quot;, sMailExecutor, sMailExecutor, ConstraintType.MUST));&#xd;
+		&#xd;
+	try{&#xd;
+		response = DatasetFactory.getDataset(&quot;dsUpdateFollowUpSIGAJURI&quot;, null, constraints, sort);&#xd;
+	}catch(e){&#xd;
+		log.error(&quot;** updateFollowUpSIGAJURI: Falha ao buscar dataset.&quot;);&#xd;
+		log.error(&quot;** updateFollowUpSIGAJURI: ERRO: &quot; + e.message);&#xd;
+	}&#xd;
+	&#xd;
+	if (response){&#xd;
+		var retorno = response.getValue(0, &quot;retorno&quot;);&#xd;
+		&#xd;
+		if (String(retorno) == &quot;true&quot;){&#xd;
+			return true;&#xd;
+		} else {&#xd;
+			log.error(&quot;*** updateFollowUpSIGAJURI: ERRO: retorno falso do SIGAJURI &quot;);&#xd;
+			return false;&#xd;
+		}&#xd;
+	}	else{&#xd;
+		log.error(&quot;** updateFollowUpSIGAJURI: Response false &quot;);&#xd;
+	}&#xd;
+	&#xd;
+	return false;&#xd;
+}&#xd;
+&#xd;
+function getMailByUserId(cUser){&#xd;
+var fields      = new Array();&#xd;
+var constraints = new Array();&#xd;
+var colleagues  = null;&#xd;
+var UserId      = cUser;&#xd;
+&#xd;
+	log.info(&quot;*** getMailByUserId: Recuperando Mail.&quot;);&#xd;
+	fields.push(&quot;mail&quot;);&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;active&quot;, true, true, ConstraintType.MUST));&#xd;
+	constraints.push(DatasetFactory.createConstraint(&quot;colleaguePK.colleagueId&quot;, cUser, cUser, ConstraintType.MUST));&#xd;
+&#xd;
+	try{&#xd;
+		colleagues = DatasetFactory.getDataset(&quot;colleague&quot;, fields, constraints, null);&#xd;
+&#xd;
+		if (colleagues &amp;&amp; colleagues.rowsCount &gt; 0){&#xd;
+			UserId = colleagues.getValue(0, &quot;mail&quot;);&#xd;
+		}&#xd;
+	}catch(e){&#xd;
+		log.error(&quot;*** getMailByUserId: Falha ao recuperar o dataset.&quot;);&#xd;
+		log.error(&quot;*** getMailByUserId: ERROR: &quot; + e.message);&#xd;
+	}&#xd;
+&#xd;
+	return UserId;&#xd;
+}&#xd;
+</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeTaskSave</eventId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeTaskSave(colleagueId,nextSequenceId,userList){&#xd;
+	var INICIO = 1;&#xd;
+	var APROVAFU = 2;&#xd;
+	var APROVACAO = 6;&#xd;
+	var EXECUCAO = 4;&#xd;
+	var APROVAFU2 = 11;&#xd;
+	var EXECUTADO = 16;&#xd;
+	var FIM = 9;&#xd;
+	&#xd;
+	var step = parseInt(getValue(&quot;WKCurrentState&quot;));&#xd;
+	&#xd;
+	var cdStatusAtividade = &quot;&quot;;&#xd;
+	var cdFollowUp = &quot;&quot;;&#xd;
+	var sObsExec = &quot;&quot;;&#xd;
+	var sStatusAtividade = &quot;&quot;;&#xd;
+	var bUpdateOk = false;&#xd;
+	&#xd;
+	switch(step){&#xd;
+	case INICIO:&#xd;
+	case APROVAFU:&#xd;
+	case APROVAFU2:&#xd;
+	case EXECUCAO:&#xd;
+		hAPI.setCardValue(&quot;sStatusAtividade&quot;, &quot;Pendente&quot;);&#xd;
+		break;&#xd;
+	case APROVACAO:&#xd;
+		if (nextSequenceId==EXECUCAO){&#xd;
+			cdStatusAtividade = &quot;1&quot;;&#xd;
+			sStatusAtividade = &quot;Pendente&quot;;&#xd;
+			hAPI.setCardValue(&quot;sOrigem&quot;, &quot;FLUIG&quot;);&#xd;
+		}&#xd;
+	case EXECUTADO:&#xd;
+		break;&#xd;
+	case FIM:&#xd;
+		/*cdStatusAtividade = &quot;2&quot;;&#xd;
+		sStatusAtividade = &quot;Concluída&quot;;&#xd;
+			&#xd;
+		cdFollowUp = hAPI.getCardValue(&quot;cdFollowUp&quot;);&#xd;
+		sObsExec = hAPI.getCardValue(&quot;sObsExecutor&quot;);&#xd;
+		&#xd;
+		bUpdateOk = updateFollowUpSIGAJURI(cdFollowUp, cdStatusAtividade, sObsExec);&#xd;
+		&#xd;
+		if (!bUpdateOk){&#xd;
+			log.error(&quot;*** beforeTaskSave, &quot; + step + &quot;: SIGAJURI NAO ATUALIZADO!&quot;);&#xd;
+		} else {			&#xd;
+			hAPI.setCardValue(&quot;cdStatusAtividade&quot;, cdStatusAtividade);&#xd;
+			hAPI.setCardValue(&quot;sStatusAtividade&quot;, sStatusAtividade);&#xd;
+		}*/&#xd;
+		&#xd;
+		break;&#xd;
+	}	&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterTaskCreate</eventId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterTaskCreate(colleagueId) {&#xd;
+	var horaParts;&#xd;
+	var segundos = 50400;&#xd;
+	var lOk = false;&#xd;
+	var cSep = &quot;-&quot;;&#xd;
+	var nDia = 2;&#xd;
+	var nMes = 1;&#xd;
+	var nAno = 0;&#xd;
+             &#xd;
+    // Recupera o numero da solicitação&#xd;
+    var processo = getValue(&quot;WKNumProces&quot;);&#xd;
+    &#xd;
+    if (hAPI.getCardValue(&quot;cdStatusAtividade&quot;) == &quot;1&quot;){&#xd;
+    	log.info(&quot;*** AFTERTASKCREATE - Execucao&quot;);&#xd;
+    	if (hAPI.getCardValue(&quot;dtPrazoTarefa&quot;) != null &amp;&amp; hAPI.getCardValue(&quot;dtPrazoTarefa&quot;).trim().length()&gt;0){&#xd;
+    	    log.info(&quot;*** AFTERTASKCREATE - Data Prazo: &quot; + hAPI.getCardValue(&quot;dtPrazoTarefa&quot;) + &quot; - &quot; + hAPI.getCardValue(&quot;dtPrazoTarefa&quot;).indexOf(&quot;/&quot;));&#xd;
+    	    //valida o separador entre / e -&#xd;
+    	    if (hAPI.getCardValue(&quot;dtPrazoTarefa&quot;).indexOf(&quot;/&quot;)&gt;0){&#xd;
+        		cSep = &quot;/&quot;;&#xd;
+        		nAno = 2;&#xd;
+        		nDia = 0;&#xd;
+        	}&#xd;
+    	    var dateParts = hAPI.getCardValue(&quot;dtPrazoTarefa&quot;).split(cSep);&#xd;
+    	    //valida se não está recebendo 0015..&#xd;
+    	    if (dateParts[nAno].substring(0,1) == &quot;0&quot;){&#xd;
+    	    	dateParts[nAno] = &quot;2&quot; + dateParts[nAno].substring(1);&#xd;
+    	    }&#xd;
+    		var date = new Date(dateParts[nAno], (dateParts[nMes] - 1), dateParts[nDia]); //Javascript reconhece 0 como janeiro, 1 fevereiro ....&#xd;
+    		lOk = true;&#xd;
+        }&#xd;
+        	&#xd;
+    	if (hAPI.getCardValue(&quot;sHora&quot;) != null &amp;&amp; hAPI.getCardValue(&quot;sHora&quot;).trim().length()&gt;0)&#xd;
+    		{&#xd;
+    		horaParts = hAPI.getCardValue(&quot;sHora&quot;).split(&quot;:&quot;);&#xd;
+    		if (horaParts.length == 2)&#xd;
+    			{&#xd;
+    			segundos = (Number(horaParts[0]) * 3600) + (Number(horaParts[1]) * 60);&#xd;
+    			}&#xd;
+    		else{&#xd;
+    			if (hAPI.getCardValue(&quot;sHora&quot;).trim().length()==4){&#xd;
+    				segundos = (Number(hAPI.getCardValue(&quot;sHora&quot;).trim().substring(0,2)) * 3600) + (Number(hAPI.getCardValue(&quot;sHora&quot;).trim().substring(2,4)) * 60);&#xd;
+    			}&#xd;
+    		}&#xd;
+    		&#xd;
+    	}&#xd;
+    }else{&#xd;
+    	//se estiver em aprovação&#xd;
+    	log.info(&quot;*** AFTERTASKCREATE - Aprovação - col:&quot; + colleagueId);&#xd;
+    	if (hAPI.getCardValue(&quot;dtPrazoAprova&quot;) != null &amp;&amp; hAPI.getCardValue(&quot;dtPrazoAprova&quot;).trim().length()&gt;0){&#xd;
+    		log.info(&quot;*** AFTERTASKCREATE - Data Prazo Ap: &quot; + hAPI.getCardValue(&quot;dtPrazoAprova&quot;) + &quot; - &quot; + hAPI.getCardValue(&quot;dtPrazoAprova&quot;).indexOf(&quot;/&quot;));&#xd;
+    	    //valida o separador entre / e -&#xd;
+    	    if (hAPI.getCardValue(&quot;dtPrazoAprova&quot;).indexOf(&quot;/&quot;)&gt;0){&#xd;
+        		cSep = &quot;/&quot;;&#xd;
+        		nAno = 2;&#xd;
+        		nDia = 0;&#xd;
+        	}&#xd;
+        	var dateParts = hAPI.getCardValue(&quot;dtPrazoAprova&quot;).split(cSep);&#xd;
+        	&#xd;
+        	//valida se não está recebendo 0015..&#xd;
+    	    if (dateParts[nAno].substring(0,1) == &quot;0&quot;){&#xd;
+    	    	dateParts[nAno] = &quot;2&quot; + dateParts[nAno].substring(1);&#xd;
+    	    }&#xd;
+    	    &#xd;
+    		var date = new Date(dateParts[nAno], (dateParts[nMes] - 1), dateParts[nDia]); //Javascript reconhece 0 como janeiro, 1 fevereiro ....&#xd;
+    		lOk = true;&#xd;
+        }&#xd;
+&#xd;
+		segundos = 61200; //17:00 do dia fatal.&#xd;
+    }&#xd;
+    &#xd;
+	        &#xd;
+    if (lOk){&#xd;
+		// Seta o prazo para as 14:00&#xd;
+		log.info(&quot;*** due setado: Dia:&quot; + dateParts[nDia] + &quot;, Mês:&quot; +  dateParts[nMes] + &quot;, Ano:&quot; + dateParts[nAno] + &quot;, col:&quot; + colleagueId)&#xd;
+		hAPI.setDueDate(processo, 0, colleagueId, date, segundos);&#xd;
+	}&#xd;
+	&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+  </list>
+  <list>
+    <AdvancedProcessProperties>
+      <advancedProcessPropertiesPK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <propertyId>AutomaticTasks</propertyId>
+        <version>1</version>
+      </advancedProcessPropertiesPK>
+      <propertieValue>2,11,16</propertieValue>
+    </AdvancedProcessProperties>
+  </list>
+  <list/>
+  <list/>
+  <list/>
+  <list>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <linkSequence>13</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>799</positionX>
+      <positionY>329</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <linkSequence>13</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>799</positionX>
+      <positionY>218</positionY>
+    </ProcessLinkBend>
+  </list>
+  <list/>
+  <list>
+    <ExtendedPropertyField>
+      <extendedPropertyFieldPK>
+        <companyId>1</companyId>
+        <processId>SIGAJURI_AprovaFU</processId>
+        <version>1</version>
+        <stateSequence>0</stateSequence>
+        <propertyName>AutomaticTasks</propertyName>
+      </extendedPropertyFieldPK>
+      <propertyType>0</propertyType>
+      <propertyDescription>AutomaticTasks</propertyDescription>
+      <propertyValue>2,11,16</propertyValue>
+      <isDefaultProperty>false</isDefaultProperty>
+    </ExtendedPropertyField>
+  </list>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+</list>

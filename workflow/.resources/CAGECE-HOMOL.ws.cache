@@ -3,7 +3,441 @@
  <object class="java.util.HashMap">
   <void method="put">
    <string>volume</string>
-   <null/>
+   <array class="java.lang.String" length="1">
+    <void index="0">
+     <string>Default</string>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>expediente</string>
+   <array class="java.lang.String" length="1">
+    <void index="0">
+     <string>Default</string>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>processosServidor</string>
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Carta Preposto</string>
+      </void>
+      <void property="processId">
+       <string>carta_preposto</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Assinatura TAE</string>
+      </void>
+      <void property="processId">
+       <string>assinatura_tae</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Validação de Enrerramento</string>
+      </void>
+      <void property="processId">
+       <string>validacao_encerramento</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Workflow de Assinatura Eletrônica - TAE</string>
+      </void>
+      <void property="processId">
+       <string>wf_ass_ele_tae_2</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Assinar Despacho Pagamento</string>
+      </void>
+      <void property="processId">
+       <string>assinar_despacho_pagamento</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Atividades SIGAJURI</string>
+      </void>
+      <void property="processId">
+       <string>SIGAJURI_AprovaFU</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Listar Tarefas</string>
+      </void>
+      <void property="processId">
+       <string>FLUIGADHOC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Solicitação de Pagamento</string>
+      </void>
+      <void property="processId">
+       <string>solicitacao_pagamento</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Aprovação de Prazos</string>
+      </void>
+      <void property="processId">
+       <string>aprovacao_advogado</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>mecanismo</string>
+   <array class="[Ljava.lang.Object;" length="9">
+    <void index="0">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Associação</string>
+      </void>
+      <void index="1">
+       <string>Associado</string>
+      </void>
+     </array>
+    </void>
+    <void index="1">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Campo de Formulário</string>
+      </void>
+      <void index="1">
+       <string>Campo Formulário</string>
+      </void>
+     </array>
+    </void>
+    <void index="2">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Executor de Atividade</string>
+      </void>
+      <void index="1">
+       <string>Executor Atividade</string>
+      </void>
+     </array>
+    </void>
+    <void index="3">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Grupo</string>
+      </void>
+      <void index="1">
+       <string>Grupo</string>
+      </void>
+     </array>
+    </void>
+    <void index="4">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Grupos do Colaborador</string>
+      </void>
+      <void index="1">
+       <string>Grupos Colaborador</string>
+      </void>
+     </array>
+    </void>
+    <void index="5">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Papel</string>
+      </void>
+      <void index="1">
+       <string>Papel</string>
+      </void>
+     </array>
+    </void>
+    <void index="6">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição para um Grupo</string>
+      </void>
+      <void index="1">
+       <string>Pool Grupo</string>
+      </void>
+     </array>
+    </void>
+    <void index="7">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição para um Papel</string>
+      </void>
+      <void index="1">
+       <string>Pool Papel</string>
+      </void>
+     </array>
+    </void>
+    <void index="8">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Usuário</string>
+      </void>
+      <void index="1">
+       <string>Usuário</string>
+      </void>
+     </array>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>forms</string>
+   <object class="java.util.LinkedList">
+    <void method="add">
+     <object class="com.totvs.technology.ecmrestclient.cardindexpublisher.FormVO">
+      <void property="datasetName">
+       <string>SIGAJURI_FollowUp</string>
+      </void>
+      <void property="documentDescription">
+       <string>SIGAJURI_FollowUp</string>
+      </void>
+      <void property="documentId">
+       <int>9</int>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.technology.ecmrestclient.cardindexpublisher.FormVO">
+      <void property="datasetName">
+       <string>dsTAEDadosComplementaresEnvelope</string>
+      </void>
+      <void property="documentDescription">
+       <string>Dados complementares envelope TAE</string>
+      </void>
+      <void property="documentId">
+       <int>26</int>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.technology.ecmrestclient.cardindexpublisher.FormVO">
+      <void property="datasetName">
+       <string>ds_form_assinatura_tae</string>
+      </void>
+      <void property="documentDescription">
+       <string>Formulário de Assinatura TAE</string>
+      </void>
+      <void property="documentId">
+       <int>30</int>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.technology.ecmrestclient.cardindexpublisher.FormVO">
+      <void property="datasetName">
+       <string>wcmSIGAJURI_FollowUp</string>
+      </void>
+      <void property="documentDescription">
+       <string>wcmSIGAJURI_FollowUp</string>
+      </void>
+      <void property="documentId">
+       <int>8</int>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.technology.ecmrestclient.cardindexpublisher.FormVO">
+      <void property="datasetName">
+       <string>ds_form_carta_preposto</string>
+      </void>
+      <void property="documentDescription">
+       <string>Formulário de Carta de Preposto</string>
+      </void>
+      <void property="documentId">
+       <int>11</int>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.technology.ecmrestclient.cardindexpublisher.FormVO">
+      <void property="datasetName">
+       <string>ds_frm_upload_doc_tae</string>
+      </void>
+      <void property="documentDescription">
+       <string>frm_upload_doc_tae</string>
+      </void>
+      <void property="documentId">
+       <int>27</int>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.technology.ecmrestclient.cardindexpublisher.FormVO">
+      <void property="datasetName">
+       <string>FLUIGADHOC</string>
+      </void>
+      <void property="documentDescription">
+       <string>FLUIGADHOC</string>
+      </void>
+      <void property="documentId">
+       <int>3</int>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.technology.ecmrestclient.cardindexpublisher.FormVO">
+      <void property="datasetName">
+       <string>FLUIGADHOCPROCESS</string>
+      </void>
+      <void property="documentDescription">
+       <string>FLUIGADHOCPROCESS</string>
+      </void>
+      <void property="documentId">
+       <int>4</int>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.technology.ecmrestclient.cardindexpublisher.FormVO">
+      <void property="datasetName">
+       <string>ds_form_pagamento</string>
+      </void>
+      <void property="documentDescription">
+       <string>Formulário de Solicitação de Pagamento</string>
+      </void>
+      <void property="documentId">
+       <int>12</int>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.technology.ecmrestclient.cardindexpublisher.FormVO">
+      <void property="datasetName">
+       <string>ds_form_assinatura_despacho</string>
+      </void>
+      <void property="documentDescription">
+       <string>Formulário para Assinatura de Despacho</string>
+      </void>
+      <void property="documentId">
+       <int>13</int>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.technology.ecmrestclient.cardindexpublisher.FormVO">
+      <void property="datasetName">
+       <string>ds_form_aprovacao_advogado_interno</string>
+      </void>
+      <void property="documentDescription">
+       <string>Formulário de Aprovação pelo Advogado Interno</string>
+      </void>
+      <void property="documentId">
+       <int>14</int>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.technology.ecmrestclient.cardindexpublisher.FormVO">
+      <void property="datasetName">
+       <string>ds_form_aprovacao_advogado</string>
+      </void>
+      <void property="documentDescription">
+       <string>Formulário de Aprovação pelo Advogado</string>
+      </void>
+      <void property="documentId">
+       <int>34</int>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>camposFormulario, documentoId = 34</string>
+   <array class="java.lang.String" length="13">
+    <void index="0">
+     <string>mail_solicitante</string>
+    </void>
+    <void index="1">
+     <string>dt_solicitacao</string>
+    </void>
+    <void index="2">
+     <string>ds_justificativa_prazos</string>
+    </void>
+    <void index="3">
+     <string>cd_solicitante</string>
+    </void>
+    <void index="4">
+     <string>nm_solicitante</string>
+    </void>
+    <void index="5">
+     <string>cd_processo</string>
+    </void>
+    <void index="6">
+     <string>nm_advogado</string>
+    </void>
+    <void index="7">
+     <string>nr_processo</string>
+    </void>
+    <void index="8">
+     <string>rd_aprovar_prazos</string>
+    </void>
+    <void index="9">
+     <string>nr_solicitacao</string>
+    </void>
+    <void index="10">
+     <string>ds_prazos</string>
+    </void>
+    <void index="11">
+     <string>dt_prazo_prazos</string>
+    </void>
+    <void index="12">
+     <string>nm_acao_prazos</string>
+    </void>
+   </array>
   </void>
  </object>
 </java>

@@ -1,0 +1,600 @@
+<html>
+
+<head>
+	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css" />
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+
+	<!-- sweetalert2 -->
+	<script type="text/javascript" src="sweetalert2.all.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="sweetalert2.min.css">
+
+	<!-- FontAwesome -->
+	<link type="text/css" rel="stylesheet" href="all.min.css">
+
+	<!-- Custom -->
+	<link type="text/css" rel="stylesheet" href="./style.css">
+</head>
+
+<body class="fluig-style-guide process-style" id="devkit-style">
+	<form name="form" role="form" id="form-processo">
+		<div class="panel panel-primary panel-border">
+			<div class="panel-heading panel-bg panel-border">
+				<div class="container-fluid">
+					<section id="logo">
+						<img src="logo.webp" alt="TOTVS" title="LOGO TOTVS" width="140">
+						<h3 class="panel-title main-title">Assinatura Eletrônica - TAE</h3>
+					</section>
+				</div>
+			</div>
+
+			<div class="panel-body">
+				<section class="sessao-config__wrapper" style="display: none;">
+					<section class="sessao-config">
+						<strong>
+							<span class="active-user"></span>
+						</strong>
+	
+						<a class="js-logout"><strong class="sair"><i class="fas fa-sign-out-alt"></i> LOGOUT</strong></a>
+
+						<button title="Documentação" class="doc"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="black" d="M11.95 18q.525 0 .888-.363t.362-.887t-.362-.888t-.888-.362t-.887.363t-.363.887t.363.888t.887.362m-.9-3.85h1.85q0-.825.188-1.3t1.062-1.3q.65-.65 1.025-1.238T15.55 8.9q0-1.4-1.025-2.15T12.1 6q-1.425 0-2.312.75T8.55 8.55l1.65.65q.125-.45.563-.975T12.1 7.7q.8 0 1.2.438t.4.962q0 .5-.3.938t-.75.812q-1.1.975-1.35 1.475t-.25 1.825M12 22q-2.075 0-3.9-.787t-3.175-2.138T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"></path></svg>
+                        </button>
+					</section>
+				</section>
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title subpanel_title">
+							<a class="collapse-icon up" data-toggle="collapse" data-parent="#accordion"	href="#dados-solicitacao"><i class="fas fa-project-diagram"></i> DADOS DA SOLICITAÇÃO</a>
+						</h3>
+					</div>
+
+					<div id="dados-solicitacao" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<div class="row">
+								<div class="form-group col-md-2">
+									<label>Nº Solicitação</label>
+									<div class="input-group">
+										<input type="text" name="numSolicitacao" id="numSolicitacao" class="form-control" readonly>
+										<span class="input-group-addon">
+											<i class="flaticon flaticon-fluig icon-sm" aria-hidden="true"></i>
+										</span>
+									</div>
+								</div>
+
+								<div class="form-group col-md-2">
+									<label>Data Abertura</label>
+									<div class="input-group">
+										<input type="text" name="datAbertura" id="datAbertura" class="form-control" readonly>
+										<input type="hidden" name="datAbertura_AAAAMMDD" id="datAbertura_AAAAMMDD" class="form-control">
+
+										<span class="input-group-addon">
+											<i class="far fa-calendar"></i>
+										</span>
+									</div>
+								</div>
+
+								<div class="form-group col-md-2">
+									<label>Hora</label>
+									<div class="input-group">
+										<input type="text" name="horAbertura" id="horAbertura" class="form-control" readonly>
+
+										<span class="input-group-addon">
+											<i class="far fa-clock"></i>
+										</span>
+									</div>
+								</div>
+
+								<div class="form-group col-md-2">
+									<label>Solicitante</label>
+									<div class="input-group">
+										<input type="text" name="nomSolic" id="nomSolic" class="form-control" readonly>
+										<input type="hidden" name="loginSolic" id="loginSolic" class="form-control">
+										<input type="hidden" name="matSolicFluig" id="matSolicFluig" class="form-control">
+
+										<span class="input-group-addon">
+											<i class="far fa-user"></i>
+										</span>
+									</div>
+								</div>
+
+								<div class="form-group col-md-2">
+									<label>Situação</label>
+									<div class="input-group">
+										<input type="text" name="solicitacaoStatus" id="solicitacaoStatus" class="form-control" readonly>
+
+										<span class="input-group-addon">
+											<i class="fas fa-spinner"></i>
+										</span>
+									</div>
+								</div>
+
+								<div class="form-group col-md-2">
+									<label>Nº Consultas</label>
+									<div class="input-group">
+										<input type="text" name="numeroConsultas" id="numeroConsultas" class="form-control" value="0" readonly>
+
+										<span class="input-group-addon">
+											<i class="fas fa-list-ol"></i>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Variáveis para sequencia dos itens de tabela pai / filho -->
+						<input type="hidden" name="seqItem" id="seqItem">
+						<input type="hidden" name="ultItem" id="ultItem">
+
+						<!-- Campos Auxiliares -->
+						<input type="hidden" name="atividade_atual" id="atividade_atual">
+						<input type="hidden" name="matricula" id="matricula">
+						<input type="hidden" name="solicitante" id="solicitante">
+						<input type="hidden" name="abertura" id="abertura">
+						<input type="hidden" name="loginValido" id="loginValido">
+						<input type="hidden" name="TokenUsuario" id="TokenUsuario">
+						<input type="hidden" name="idDoc" id="idDoc">
+						<input type="hidden" name="documentIdAssinado" id="documentIdAssinado">
+						<input type="hidden" name="descritor" id="descritor">
+						<input type="hidden" name="limiteUpload" id="limiteUpload">
+						<input type="hidden" name="tamanhoTotalAnexos" id="tamanhoTotalAnexos">
+						<input type="hidden" name="token" id="token">
+						<input type="hidden" name="refreshToken" id="refreshToken">
+						<input type="hidden" name="prazoExcedido" id="prazoExcedido">
+						<input type="hidden" name="endpoint" id="endpoint">
+					</div>
+				</div>
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title subpanel_title">
+							<a class="collapse-icon up" data-toggle="collapse" data-parent="#accordion"	href="#configuracoes"><i class="fas fa-tools"></i> CONFIGURAÇÕES</a>
+						</h3>
+					</div>
+
+					<div id="configuracoes" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<div class="row">
+								<div class="form-group col-md-6">
+									<label>Nome do envelope</label>
+									<div class="input-group">
+										<input type="text" name="nomeEnvelope" id="nomeEnvelope" class="form-control">
+										<span class="input-group-addon">
+											<i class="fas fa-envelope-open-text"></i>
+										</span>
+									</div>
+								</div>
+
+								<div class="form-group col-md-6">
+									<label>Armazenar manifesto em:</label>
+									<div class="input-group search-folder">
+										<input type="text" name="manifestoPath" id="manifestoPath" class="form-control" readonly>
+										<span class="input-group-addon">
+											<i class="fas fa-search-location"></i>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title subpanel_title">
+							<a class="collapse-icon up" data-toggle="collapse" data-parent="#accordion"	href="#documentos"><i class="fas fa-folder-open"></i> DOCUMENTOS</a>
+						</h3>
+					</div>
+
+					<div id="documentos" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<div class="button-group">
+								<section>
+									<button class="btn btn-primary btn-custom btn-custom-primary add-files">
+										<i class="fas fa-desktop"></i> MEU COMPUTADOR
+									</button>
+
+									<button class="btn btn-primary btn-custom btn-custom-primary ecm-search">
+										<i class="far fa-file-alt"></i> BUSCAR NO ECM
+									</button>
+
+									<!-- <button class="btn btn-primary btn-custom btn-custom-primary check-all">
+										<i class="fas fa-check-square"></i> ENVIAR TUDO
+									</button> -->
+								</section>
+
+								<section class="file-size"></section>
+							</div>
+
+							<table id="documentos" class="table pai-filho table-striped" tablename="documentos" noaddbutton="true" nodeletebutton="true">
+								<thead>
+									<tr>
+										<th width="50%"><i class="far fa-file"></i> Documento</th>
+										<th width="50%"><i class="fas fa-tools"></i> Ações</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<!-- <td style="display: flex; align-items: center; justify-content: center;">
+											<input type="checkbox" name="enviarAssinatura" id="enviarAssinatura" class="checkbox">
+										</td> -->
+
+										<td>
+											<div class="input-group">
+												<input type="text" id="documento" name="documento" class="form-control" readonly>
+												<span class="input-group-addon">
+													<i class="far fa-file-pdf"></i>
+												</span>
+											</div>
+										</td>
+
+										<td>
+											<select name="acoesDocumento" id="acoesDocumento" class="form-control">
+												<option value="">Selecione uma opção...</option>
+												<option value="1">Enviar para assinatura</option>
+												<option value="2">Enviar como anexo</option>
+												<option value="0">Não enviar</option>
+											</select>
+										</td>
+
+										<td>
+											<span class="fs-display-block fs-sm-space">
+												<i class="far fa-trash-alt icon-md remove-button" onclick="customDeleteLinha(this)"></i>
+											</span>
+										</td>
+
+										<!-- Hidden -->
+										<input type="hidden" name="fileSize" id="fileSize">
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title subpanel_title">
+							<a class="collapse-icon up" data-toggle="collapse" data-parent="#accordion" href="#destinatarios"><i class="fas fa-users"></i> DESTINATÁRIOS</a>
+						</h3>
+					</div>
+
+					<div id="destinatarios" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<div class="row">
+								<div class="form-group col-md-3">
+									<div class="check">
+										<input type="checkbox" name="assinarEnviar" id="assinarEnviar" class="checkbox" onClick="validaCkAssinar()">
+										<label for="assinarEnviar" class="naoSelecionavel">Desejo assinar o documento e enviar</label>
+									</div>
+								</div>
+
+								<div class="form-group col-md-3">
+									<div class="check">
+										<input type="checkbox" name="utilizaOrdemAss" id="utilizaOrdemAss" class="checkbox">
+										<label for="utilizaOrdemAss" class="naoSelecionavel">Definir ordem de assinaturas</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="row" id="tpAssResp" style="display: none;">
+								<div class="form-group col-md-3">
+									<select name="tipoDeAssinatura" id="tipoDeAssinatura" class="form-control">
+										<option value="0" selected>Assinatura Eletrônica</option>
+										<option value="4">Testemunha</option>
+									</select>
+								</div>
+							</div>
+
+							<hr>
+
+							<!-- Pai-filho -->
+							<table id="tbCtts" class="table pai-filho table-striped" tablename="tbCtts" noaddbutton="true" nodeletebutton="true">
+								<thead>
+									<tr>
+										<th class="colOrdemAssCtt" width="5%"><i class="fas fa-list-ol"></i> Ordem</th>
+										<th class="colEmailCtt" width="45%"><i class="far fa-envelope"></i> E-mail</th>
+										<th class="colTipoAssCtt" width="30%"><i class="fas fa-signature"></i> Tipo assinatura</th>
+										<th></th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr id="linhasFilho" name="linhasFilho">
+										<td class="colOrdemAssCtt">
+											<select name="ordemAss" id="ordemAss" class="form-control ordemAss selectOrder"	onchange="changeOrderElement(this)" data-field-id="ordemAssinatura">
+												<option disabled selected hidden value="Selecione...">Selecione...</option>
+											</select>
+
+											<input type="hidden" id="ordemAssValor" name="ordemAssValor">
+										</td>
+
+										<td class="colEmailCtt">
+											<div class="input-group">
+												<input type="text" id="emailCtt" name="emailCtt" class="form-control" readonly data-field-id="email">
+												<span class="input-group-addon">
+													<i class="far fa-envelope"></i>
+												</span>
+											</div>
+										</td>
+
+										<td class="colTipoAssCtt">
+											<select name="tipoAss" id="tipoAss" class="form-control" readonly data-field-id="acao">
+												<option value="0">Assinar</option>
+												<option value="4">Assinar com certificado (A1/A3)</option>
+												<option value="1">Validar</option>
+												<option value="2">Testemunhar</option>
+												<option value="3">Observar</option>
+											</select>
+										</td>
+
+										<td>
+											<span class="fs-display-block fs-sm-space">
+												<i class="far fa-edit icon-md edit-button"></i>
+												<i class="far fa-eye icon-md view-button" style="display: none;"></i>
+											</span>
+										</td>
+
+										<td class="removeServicoCons">
+											<span class="fs-display-block fs-sm-space">
+												<i class="far fa-trash-alt icon-md remove-button" onclick="customDeleteLinha(this)"></i>
+											</span>
+										</td>
+
+										<input type="hidden" name="papelAssinante" id="papelAssinante">
+										<input type="hidden" name="tipoAuth" id="tipoAuth">
+										<input type="hidden" name="nomeCompleto" id="nomeCompleto">
+										<input type="hidden" name="tipoIdentificacao" id="tipoIdentificacao">
+										<input type="hidden" name="documentoIdentificacao" id="documentoIdentificacao">
+									</tr>
+								</tbody>
+							</table>
+
+							<hr>
+							<div class="button-group">
+								<div>
+									<button class="btn btn-primary btn-custom btn-custom-primary js-add">
+										<i class="fas fa-plus-circle"></i> ADICIONAR
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title subpanel_title">
+							<a class="collapse-icon up" data-toggle="collapse" data-parent="#accordion" href="#opcoes-adicionais"><i class="fas fa-upload"></i> OPÇÕES ADICIONAIS (OPCIONAL)</a>
+						</h3>
+					</div>
+
+					<div id="opcoes-adicionais" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<div class="row">
+								<div class="form-group col-md-3">
+									<label for="dataExpiracao">Data de Expiração</label>
+									<input type="date" class="form-control" name="dataExpiracao" id="dataExpiracao">
+								</div>
+<!-- 
+								<div class="form-group col-md-3">
+									<label for="dataExpiracao" class="required">Data de aceite</label>
+									<input type="date" class="form-control" name="dataAceite" id="dataAceite">
+								</div> -->
+
+								<div class="form-group col-md-3 checkbox-align">
+									<div class="check">
+										<input type="checkbox" name="assinaManus" id="assinaManus" class="checkbox">
+										<label for="assinaManus" class="naoSelecionavel">Solicitar assinatura manuscrita</label>
+									</div>
+								</div>
+
+								<div class="form-group col-md-3 checkbox-align">
+									<div class="check">
+										<input type="checkbox" name="rejeitarDocumento" id="rejeitarDocumento" class="checkbox">
+										<label for="rejeitarDocumento" class="naoSelecionavel">Permitir rejeitar o documento</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="form-group col-md-12">
+									<label>Assunto da Mensagem</label>
+									<div class="input-group">
+										<input type="text" name="assunto" id="assunto" class="form-control">
+
+										<span class="input-group-addon">
+											<i class="fas fa-inbox"></i>
+										</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="form-group col-md-12">
+									<label>Corpo da Mensagem</label>
+									<textarea class="form-control" name="mensagem" id="mensagem" rows="4"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-primary dados-assinatura">
+					<div class="panel-heading">
+						<h3 class="panel-title subpanel_title">
+							<a class="collapse-icon up" data-toggle="collapse" data-parent="#accordion"	href="#dados-assinatura"><i class="fas fa-file-signature"></i> DADOS DA ASSINATURA (automático)</a>
+						</h3>
+					</div>
+
+					<div id="dados-assinatura" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<div class="row">
+								<div class="form-group col-md-4">
+									<label>Arquivo</label>
+									<div class="input-group">
+										<input type="text" name="nomeArquivo" id="nomeArquivo" class="form-control" readonly>
+										<span class="input-group-addon">
+											<i class="far fa-file"></i>
+										</span>
+									</div>
+								</div>
+
+								<div class="form-group col-md-2">
+									<label>Data Publicação</label>
+									<div class="input-group">
+										<input type="text" name="dataPublicacao" id="dataPublicacao" class="form-control" readonly>
+										<span class="input-group-addon">
+											<i class="far fa-calendar"></i>
+										</span>
+									</div>
+								</div>
+
+								<div class="form-group col-md-2">
+									<label>Última atualização</label>
+									<div class="input-group">
+										<input type="text" name="recModifiedOn" id="recModifiedOn" class="form-control" readonly>
+										<span class="input-group-addon">
+											<i class="fas fa-user-clock"></i>
+										</span>
+									</div>
+								</div>
+
+								<div class="form-group col-md-2">
+									<label>Status Assinatura (TAE)</label>
+									<div class="input-group">
+										<input type="hidden" class="form-control" name="codStatusAssinatura" id="codStatusAssinatura">
+										<input type="text" class="form-control" name="desStatusAssinatura" id="desStatusAssinatura" readonly>
+
+										<span class="input-group-addon">
+											<i class="fas fa-battery-three-quarters"></i>
+										</span>
+									</div>
+								</div>
+
+								<div class="form-group col-md-2">
+									<label>Resultado</label>
+									<div class="input-group">
+										<input type="text" name="resultadoAssinatura" id="resultadoAssinatura" class="form-control" readonly>
+										<span class="input-group-addon">
+											<i class="fas fa-equals"></i>
+										</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="form-group col-md-12">
+									<label>Motivo Rejeição</label>
+									<textarea class="form-control" name="motivoRejeicao" id="motivoRejeicao" readonly></textarea>
+								</div>
+							</div>
+
+							<div class="panel panel-primary">
+								<div class="panel-heading">
+									<h3 class="panel-title subpanel_title">
+										<a class="collapse-icon up" data-toggle="collapse" data-parent="#accordion" href="#destinatarios-realizado"><i class="fas fa-users"></i> DESTINATÁRIOS - REALIZADO - TAE</a>
+									</h3>
+								</div>
+
+								<div id="destinatarios-realizado" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<!-- Pai-filho -->
+										<table id="destinatariosTAE" class="table pai-filho table-striped" tablename="destinatariosTAE" noaddbutton="true" nodeletebutton="true">
+											<thead>
+												<tr>
+													<th style="display:none;"><i class="far fa-user"></i> Nome</th>
+													<th><i class="far fa-envelope"></i> E-mail</th>
+													<th><i class="fas fa-signature"></i> Ação</th>
+													<th><i class="far fa-calendar"></i> Data</th>
+													<th style="display: none;"><i class="fas fa-spinner"></i> Status</th>
+													<th><i class="far fa-question-circle"></i> Pendente?</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td style="display: none;">
+														<div class="input-group">
+															<input type="text" class="form-control" name="dest_nome_tae" id="dest_nome_tae" readonly>
+															<span class="input-group-addon">
+																<i class="far fa-user"></i>
+															</span>
+														</div>
+													</td>
+
+													<td>
+														<div class="input-group">
+															<input type="text" class="form-control" name="dest_email_tae" id="dest_email_tae" readonly>
+															<span class="input-group-addon">
+																<i class="far fa-envelope"></i>
+															</span>
+														</div>
+													</td>
+
+													<td>
+														<select class="form-control" name="dest_acao_tae" id="dest_acao_tae" readonly>
+															<option value="">Selecione</option>
+															<option value="0">Assinar</option>
+															<option value="1">Validar</option>
+															<option value="2">Testemunhar</option>
+														</select>
+													</td>
+
+													<td>
+														<div class="input-group">
+															<input type="text" class="form-control" name="dest_data_tae" id="dest_data_tae" readonly>
+															<span class="input-group-addon">
+																<i class="far fa-calendar"></i>
+															</span>
+														</div>
+													</td>
+
+													<td style="display: none;">
+														<div class="input-group">
+															<input type="text" class="form-control" name="dest_statusTipoAssinatura_tae" id="dest_statusTipoAssinatura_tae" readonly>
+															<span class="input-group-addon">
+																<i class="fas fa-spinner"></i>
+															</span>
+														</div>
+													</td>
+
+													<td>
+														<div class="input-group">
+															<input type="text" class="form-control" name="dest_pendente_tae" id="dest_pendente_tae"	readonly>
+															<span class="input-group-addon">
+																<i class="far fa-question-circle"></i>
+															</span>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+
+<!-- JQuery Mask Plugin -->
+<script type="text/javascript" src="jquery.mask.min.js"></script>
+
+<!-- autoComplete.js -->
+<script type="text/javascript" src="autoComplete.min.js"></script>
+<link type="text/css" rel="stylesheet" href="autoComplete.02.min.css">
+
+<!-- JS -->
+<script type="text/javascript" src="HTML.js"></script>
+<script type="text/javascript" src="ECM_SEARCH.js"></script>
+<script type="text/javascript" src="events.js"></script>
+<script type="text/javascript" src="/webdesk/vcXMLRPC.js"></script>
+
+</html>

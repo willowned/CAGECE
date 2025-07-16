@@ -9,13 +9,13 @@
     <active>true</active>
     <publicProcess>false</publicProcess>
     <volumeId>Default</volumeId>
-    <categoryId>CAGECE</categoryId>
+    <categoryId>TOTVS Juridico</categoryId>
     <managerEngineAllocationId></managerEngineAllocationId>
     <snapshotFrequency>0</snapshotFrequency>
     <baseDay>0</baseDay>
     <baseMonth>0</baseMonth>
     <periodId>Default</periodId>
-    <uniqueCardVersion>false</uniqueCardVersion>
+    <uniqueCardVersion>true</uniqueCardVersion>
     <keyWord></keyWord>
     <complementsLevel>1</complementsLevel>
     <notifyRequisitionerComplements>true</notifyRequisitionerComplements>
@@ -28,10 +28,10 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>Solicitação de Pagamento</processId>
-      <version>2</version>
+      <version>1</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
-    <formId>36</formId>
+    <formId>12</formId>
     <editionMode>true</editionMode>
     <updateAttachmentsVersion>false</updateAttachmentsVersion>
     <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
@@ -272,7 +272,7 @@
         <companyId>1</companyId>
         <processId>solicitacao_pagamento</processId>
         <expressionOrder>1</expressionOrder>
-        <version>2</version>
+        <version>1</version>
         <sequence>7</sequence>
       </conditionProcessStatePK>
       <condition>true</condition>

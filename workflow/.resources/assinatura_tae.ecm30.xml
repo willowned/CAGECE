@@ -9,20 +9,21 @@
     <active>true</active>
     <publicProcess>false</publicProcess>
     <volumeId>Default</volumeId>
-    <categoryId>CAGECE</categoryId>
+    <categoryId>TOTVS Juridico</categoryId>
     <managerEngineAllocationId></managerEngineAllocationId>
+    <managerEngineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;admin&lt;/Role&gt;&lt;/AssignmentController&gt;</managerEngineAllocationConfiguration>
     <snapshotFrequency>0</snapshotFrequency>
     <baseDay>0</baseDay>
     <baseMonth>0</baseMonth>
     <periodId>Default</periodId>
-    <uniqueCardVersion>false</uniqueCardVersion>
+    <uniqueCardVersion>true</uniqueCardVersion>
     <keyWord></keyWord>
     <complementsLevel>1</complementsLevel>
-    <notifyRequisitionerComplements>true</notifyRequisitionerComplements>
+    <notifyRequisitionerComplements>false</notifyRequisitionerComplements>
     <notifyManagerComplements>false</notifyManagerComplements>
     <deadlineTime>0</deadlineTime>
     <warningDeadlineTime>0</warningDeadlineTime>
-    <notifyAuthorityComplements>true</notifyAuthorityComplements>
+    <notifyAuthorityComplements>false</notifyAuthorityComplements>
   </ProcessDefinition>
   <ProcessDefinitionVersion>
     <processDefinitionVersionPK>
@@ -31,7 +32,7 @@
       <version>2</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
-    <formId>0</formId>
+    <formId>30</formId>
     <editionMode>true</editionMode>
     <updateAttachmentsVersion>false</updateAttachmentsVersion>
     <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
@@ -75,8 +76,8 @@
       <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>120</positionX>
-      <positionY>235</positionY>
+      <positionX>80</positionX>
+      <positionY>160</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -84,7 +85,7 @@
       <allowanceManagerTime>0</allowanceManagerTime>
       <frequenceManagerTime>0</frequenceManagerTime>
       <inhibitTransfer>false</inhibitTransfer>
-      <periodId></periodId>
+      <periodId>Default</periodId>
       <stateType>0</stateType>
       <bpmnType>10</bpmnType>
       <signalId>0</signalId>
@@ -101,10 +102,10 @@
         <companyId>1</companyId>
         <processId>assinatura_tae</processId>
         <version>1</version>
-        <sequence>7</sequence>
+        <sequence>5</sequence>
       </processStatePK>
-      <stateName>Enviar Assinatura</stateName>
-      <stateDescription>Enviar Assinatura</stateDescription>
+      <stateName>Upload Arquivo / Criação do Envelope</stateName>
+      <stateDescription>Upload Arquivo / Criação do Envelope</stateDescription>
       <instruction></instruction>
       <deadlineTime>0</deadlineTime>
       <deadlineFieldName></deadlineFieldName>
@@ -124,8 +125,8 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>240</positionX>
-      <positionY>217</positionY>
+      <positionX>160</positionX>
+      <positionY>135</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -151,10 +152,10 @@
         <companyId>1</companyId>
         <processId>assinatura_tae</processId>
         <version>1</version>
-        <sequence>10</sequence>
+        <sequence>6</sequence>
       </processStatePK>
-      <stateName>Verificar Erro</stateName>
-      <stateDescription>Verificar Erro</stateDescription>
+      <stateName>Consulta Status</stateName>
+      <stateDescription>Consulta Status</stateDescription>
       <instruction></instruction>
       <deadlineTime>0</deadlineTime>
       <deadlineFieldName></deadlineFieldName>
@@ -162,10 +163,10 @@
       <agreementPercentage>0</agreementPercentage>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
-      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyAuthorityDelay>false</notifyAuthorityDelay>
       <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
-      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
-      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>0</frequenceAuthorityTime>
       <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
       <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
       <transferAttachments>false</transferAttachments>
@@ -174,58 +175,8 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>240</positionX>
-      <positionY>56</positionY>
-      <forecastedEffortType>0</forecastedEffortType>
-      <forecastedEffort>0</forecastedEffort>
-      <notifyManagerFollowUp>false</notifyManagerFollowUp>
-      <notifyManagerDelay>false</notifyManagerDelay>
-      <allowanceManagerTime>0</allowanceManagerTime>
-      <frequenceManagerTime>0</frequenceManagerTime>
-      <inhibitTransfer>false</inhibitTransfer>
-      <periodId></periodId>
-      <stateType>0</stateType>
-      <bpmnType>80</bpmnType>
-      <signalId>0</signalId>
-      <counterSign>false</counterSign>
-      <openInstances>0</openInstances>
-      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
-      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
-      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
-      <destinationStates/>
-      <digitalSignature>false</digitalSignature>
-      <executionType>0</executionType>
-    </ProcessState>
-    <ProcessState>
-      <processStatePK>
-        <companyId>1</companyId>
-        <processId>assinatura_tae</processId>
-        <version>1</version>
-        <sequence>15</sequence>
-      </processStatePK>
-      <stateName>Receber Assinatura</stateName>
-      <stateDescription>Receber Assinatura</stateDescription>
-      <instruction></instruction>
-      <deadlineTime>0</deadlineTime>
-      <deadlineFieldName></deadlineFieldName>
-      <joint>false</joint>
-      <agreementPercentage>0</agreementPercentage>
-      <selectColleague>1</selectColleague>
-      <initialState>false</initialState>
-      <notifyAuthorityDelay>true</notifyAuthorityDelay>
-      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
-      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
-      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
-      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
-      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
-      <transferAttachments>false</transferAttachments>
-      <subProcessId></subProcessId>
-      <formFolder>0</formFolder>
-      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
-      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
-      <automatic>false</automatic>
-      <positionX>520</positionX>
-      <positionY>217</positionY>
+      <positionX>356</positionX>
+      <positionY>142</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -251,15 +202,67 @@
         <companyId>1</companyId>
         <processId>assinatura_tae</processId>
         <version>1</version>
-        <sequence>19</sequence>
+        <sequence>12</sequence>
       </processStatePK>
-      <stateName>Verificar Erro</stateName>
-      <stateDescription>Verificar Erro</stateDescription>
+      <stateName>Download</stateName>
+      <stateDescription>Download</stateDescription>
       <instruction></instruction>
       <deadlineTime>0</deadlineTime>
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>false</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>0</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>660</positionX>
+      <positionY>149</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>82</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>1</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+        <sequence>21</sequence>
+      </processStatePK>
+      <stateName>Erro no Upload</stateName>
+      <stateDescription>Erro no Upload</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>57600</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;4&lt;/BaseActivity&gt;&lt;Returns&gt;All&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -274,8 +277,8 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>520</positionX>
-      <positionY>56</positionY>
+      <positionX>160</positionX>
+      <positionY>241</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -283,7 +286,7 @@
       <allowanceManagerTime>0</allowanceManagerTime>
       <frequenceManagerTime>0</frequenceManagerTime>
       <inhibitTransfer>false</inhibitTransfer>
-      <periodId></periodId>
+      <periodId>Default</periodId>
       <stateType>0</stateType>
       <bpmnType>80</bpmnType>
       <signalId>0</signalId>
@@ -301,22 +304,23 @@
         <companyId>1</companyId>
         <processId>assinatura_tae</processId>
         <version>1</version>
-        <sequence>9</sequence>
+        <sequence>22</sequence>
       </processStatePK>
-      <stateName>Intermediário</stateName>
-      <stateDescription>Intermediário</stateDescription>
-      <instruction>Evento intermediário do processo</instruction>
-      <deadlineTime>0</deadlineTime>
+      <stateName>Erro na Consulta</stateName>
+      <stateDescription>Erro na Consulta</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>57600</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
-      <engineAllocationConfiguration></engineAllocationConfiguration>
-      <selectColleague>0</selectColleague>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;4&lt;/BaseActivity&gt;&lt;Returns&gt;All&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
       <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
-      <allowanceAuthorityTime>1</allowanceAuthorityTime>
-      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
       <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
       <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
       <transferAttachments>false</transferAttachments>
@@ -325,45 +329,50 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>320</positionX>
-      <positionY>207</positionY>
+      <positionX>356</positionX>
+      <positionY>234</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
       <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
       <frequenceManagerTime>0</frequenceManagerTime>
       <inhibitTransfer>false</inhibitTransfer>
-      <periodId></periodId>
+      <periodId>Default</periodId>
       <stateType>0</stateType>
-      <bpmnType>43</bpmnType>
+      <bpmnType>80</bpmnType>
       <signalId>0</signalId>
       <counterSign>false</counterSign>
       <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
       <destinationStates/>
       <digitalSignature>false</digitalSignature>
-      <parentSequence>7</parentSequence>
+      <executionType>0</executionType>
     </ProcessState>
     <ProcessState>
       <processStatePK>
         <companyId>1</companyId>
         <processId>assinatura_tae</processId>
         <version>1</version>
-        <sequence>13</sequence>
+        <sequence>23</sequence>
       </processStatePK>
-      <stateName>Validar Assinatura</stateName>
-      <stateDescription>Validar Assinatura</stateDescription>
-      <instruction>Evento intermediário do processo</instruction>
-      <deadlineTime>0</deadlineTime>
+      <stateName>Erro no download</stateName>
+      <stateDescription>Erro no download</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>57600</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
-      <engineAllocationConfiguration></engineAllocationConfiguration>
-      <selectColleague>0</selectColleague>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;4&lt;/BaseActivity&gt;&lt;Returns&gt;All&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
       <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
-      <allowanceAuthorityTime>1</allowanceAuthorityTime>
-      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
       <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
       <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
       <transferAttachments>false</transferAttachments>
@@ -372,23 +381,79 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>420</positionX>
-      <positionY>235</positionY>
+      <positionX>660</positionX>
+      <positionY>234</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
       <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
       <frequenceManagerTime>0</frequenceManagerTime>
       <inhibitTransfer>false</inhibitTransfer>
-      <periodId></periodId>
+      <periodId>Default</periodId>
       <stateType>0</stateType>
-      <bpmnType>35</bpmnType>
+      <bpmnType>80</bpmnType>
       <signalId>0</signalId>
       <counterSign>false</counterSign>
       <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
       <destinationStates/>
       <digitalSignature>false</digitalSignature>
-      <parentSequence>0</parentSequence>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+        <sequence>47</sequence>
+      </processStatePK>
+      <stateName>Prazo de Assinatura Excedido</stateName>
+      <stateDescription>Prazo de Assinatura Excedido</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>144000</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;4&lt;/BaseActivity&gt;&lt;Returns&gt;Last&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>490</positionX>
+      <positionY>320</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId>Default</periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
     </ProcessState>
     <ProcessState>
       <processStatePK>
@@ -419,8 +484,8 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>611</positionX>
-      <positionY>202</positionY>
+      <positionX>260</positionX>
+      <positionY>185</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -435,17 +500,183 @@
       <openInstances>0</openInstances>
       <destinationStates/>
       <digitalSignature>false</digitalSignature>
-      <parentSequence>15</parentSequence>
+      <parentSequence>5</parentSequence>
     </ProcessState>
     <ProcessState>
       <processStatePK>
         <companyId>1</companyId>
         <processId>assinatura_tae</processId>
         <version>1</version>
-        <sequence>22</sequence>
+        <sequence>19</sequence>
       </processStatePK>
-      <stateName>Fim</stateName>
-      <stateDescription>Fim</stateDescription>
+      <stateName>Intermediário</stateName>
+      <stateDescription>Intermediário</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>436</positionX>
+      <positionY>192</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>43</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>6</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+        <sequence>20</sequence>
+      </processStatePK>
+      <stateName>Intermediário</stateName>
+      <stateDescription>Intermediário</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>760</positionX>
+      <positionY>199</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>43</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>12</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+        <sequence>61</sequence>
+      </processStatePK>
+      <stateName>Aguardando Próxima Consulta</stateName>
+      <stateDescription>Aguardando Próxima Consulta</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>true</automatic>
+      <positionX>391</positionX>
+      <positionY>58</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>32</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>0</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+        <sequence>7</sequence>
+      </processStatePK>
+      <stateName>Status</stateName>
+      <stateDescription>Status</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>514</positionX>
+      <positionY>133</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+        <sequence>13</sequence>
+      </processStatePK>
+      <stateName>Fim - Concluído</stateName>
+      <stateDescription>Fim - Concluído</stateDescription>
       <instruction>Atividade final do processo</instruction>
       <deadlineTime>0</deadlineTime>
       <joint>false</joint>
@@ -464,10 +695,10 @@
       <subProcessId></subProcessId>
       <formFolder>0</formFolder>
       <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
-      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <notifyRequisitionerFollowUp>true</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>710</positionX>
-      <positionY>235</positionY>
+      <positionX>870</positionX>
+      <positionY>160</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -484,36 +715,123 @@
       <destinationStates/>
       <digitalSignature>false</digitalSignature>
     </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+        <sequence>66</sequence>
+      </processStatePK>
+      <stateName>Fim - Cancelado / Rejeitado</stateName>
+      <stateDescription>Fim - Cancelado / Rejeitado</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>true</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>910</positionX>
+      <positionY>80</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>6</stateType>
+      <bpmnType>65</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
   </list>
-  <list/>
+  <list>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>2</version>
+        <sequence>7</sequence>
+      </conditionProcessStatePK>
+      <destinationSequenceId>12</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>2</version>
+        <sequence>7</sequence>
+      </conditionProcessStatePK>
+      <destinationSequenceId>66</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <expressionOrder>3</expressionOrder>
+        <version>2</version>
+        <sequence>7</sequence>
+      </conditionProcessStatePK>
+      <destinationSequenceId>66</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <expressionOrder>4</expressionOrder>
+        <version>2</version>
+        <sequence>7</sequence>
+      </conditionProcessStatePK>
+      <destinationSequenceId>47</destinationSequenceId>
+      <conditionType>1</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <expressionOrder>5</expressionOrder>
+        <version>2</version>
+        <sequence>7</sequence>
+      </conditionProcessStatePK>
+      <condition>1==1</condition>
+      <destinationSequenceId>61</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+  </list>
   <list>
     <ProcessLink>
       <processLinkPK>
         <companyId>1</companyId>
         <processId>assinatura_tae</processId>
         <version>1</version>
-        <linkSequence>11</linkSequence>
+        <linkSequence>8</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
-      <initialStateSequence>9</initialStateSequence>
-      <finalStateSequence>10</finalStateSequence>
-      <returnLabel></returnLabel>
-      <name></name>
-      <automaticLink>false</automaticLink>
-      <defaultLink>false</defaultLink>
-      <type>0</type>
-    </ProcessLink>
-    <ProcessLink>
-      <processLinkPK>
-        <companyId>1</companyId>
-        <processId>assinatura_tae</processId>
-        <version>1</version>
-        <linkSequence>12</linkSequence>
-      </processLinkPK>
-      <actionLabel></actionLabel>
-      <returnPermited>false</returnPermited>
-      <initialStateSequence>10</initialStateSequence>
+      <initialStateSequence>6</initialStateSequence>
       <finalStateSequence>7</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
@@ -526,12 +844,12 @@
         <companyId>1</companyId>
         <processId>assinatura_tae</processId>
         <version>1</version>
-        <linkSequence>14</linkSequence>
+        <linkSequence>15</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
-      <initialStateSequence>7</initialStateSequence>
-      <finalStateSequence>13</finalStateSequence>
+      <initialStateSequence>4</initialStateSequence>
+      <finalStateSequence>5</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
       <automaticLink>false</automaticLink>
@@ -547,8 +865,8 @@
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
-      <initialStateSequence>13</initialStateSequence>
-      <finalStateSequence>15</finalStateSequence>
+      <initialStateSequence>5</initialStateSequence>
+      <finalStateSequence>6</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
       <automaticLink>false</automaticLink>
@@ -560,48 +878,14 @@
         <companyId>1</companyId>
         <processId>assinatura_tae</processId>
         <version>1</version>
-        <linkSequence>20</linkSequence>
+        <linkSequence>17</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
-      <initialStateSequence>18</initialStateSequence>
-      <finalStateSequence>19</finalStateSequence>
+      <initialStateSequence>7</initialStateSequence>
+      <finalStateSequence>12</finalStateSequence>
       <returnLabel></returnLabel>
-      <name></name>
-      <automaticLink>false</automaticLink>
-      <defaultLink>false</defaultLink>
-      <type>0</type>
-    </ProcessLink>
-    <ProcessLink>
-      <processLinkPK>
-        <companyId>1</companyId>
-        <processId>assinatura_tae</processId>
-        <version>1</version>
-        <linkSequence>21</linkSequence>
-      </processLinkPK>
-      <actionLabel></actionLabel>
-      <returnPermited>false</returnPermited>
-      <initialStateSequence>19</initialStateSequence>
-      <finalStateSequence>15</finalStateSequence>
-      <returnLabel></returnLabel>
-      <name></name>
-      <automaticLink>false</automaticLink>
-      <defaultLink>false</defaultLink>
-      <type>0</type>
-    </ProcessLink>
-    <ProcessLink>
-      <processLinkPK>
-        <companyId>1</companyId>
-        <processId>assinatura_tae</processId>
-        <version>1</version>
-        <linkSequence>23</linkSequence>
-      </processLinkPK>
-      <actionLabel></actionLabel>
-      <returnPermited>false</returnPermited>
-      <initialStateSequence>15</initialStateSequence>
-      <finalStateSequence>22</finalStateSequence>
-      <returnLabel></returnLabel>
-      <name></name>
+      <name>Assinado</name>
       <automaticLink>false</automaticLink>
       <defaultLink>false</defaultLink>
       <type>0</type>
@@ -615,10 +899,231 @@
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
-      <initialStateSequence>4</initialStateSequence>
-      <finalStateSequence>7</finalStateSequence>
+      <initialStateSequence>18</initialStateSequence>
+      <finalStateSequence>21</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+        <linkSequence>25</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>21</initialStateSequence>
+      <finalStateSequence>5</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+        <linkSequence>26</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>19</initialStateSequence>
+      <finalStateSequence>22</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+        <linkSequence>27</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>22</initialStateSequence>
+      <finalStateSequence>6</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+        <linkSequence>28</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>20</initialStateSequence>
+      <finalStateSequence>23</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+        <linkSequence>29</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>23</initialStateSequence>
+      <finalStateSequence>12</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+        <linkSequence>48</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>7</initialStateSequence>
+      <finalStateSequence>47</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Expirado</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+        <linkSequence>49</linkSequence>
+      </processLinkPK>
+      <actionLabel>01 - Aguardar novo prazo</actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>47</initialStateSequence>
+      <finalStateSequence>6</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>01 - Aguardar novo prazo</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+        <linkSequence>62</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>7</initialStateSequence>
+      <finalStateSequence>61</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Aguardar nova consulta</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+        <linkSequence>63</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>61</initialStateSequence>
+      <finalStateSequence>6</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+        <linkSequence>69</linkSequence>
+      </processLinkPK>
+      <actionLabel>02 - Finalizar</actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>47</initialStateSequence>
+      <finalStateSequence>13</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>02 - Finalizar</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+        <linkSequence>71</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>12</initialStateSequence>
+      <finalStateSequence>13</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+        <linkSequence>72</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>7</initialStateSequence>
+      <finalStateSequence>66</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Cancelado/Rejeitado/Excluído</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+        <linkSequence>73</linkSequence>
+      </processLinkPK>
+      <actionLabel>03 - Cancelar</actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>47</initialStateSequence>
+      <finalStateSequence>66</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>03 - Cancelar</name>
       <automaticLink>false</automaticLink>
       <defaultLink>false</defaultLink>
       <type>0</type>
@@ -629,22 +1134,603 @@
     <WorkflowProcessEvent>
       <workflowProcessEventPK>
         <companyId>1</companyId>
-        <eventId>servicetask15</eventId>
+        <eventId>afterProcessCreate</eventId>
         <processId>assinatura_tae</processId>
         <version>1</version>
       </workflowProcessEventPK>
-      <eventDescription>function servicetask15(attempt, message) {
+      <eventDescription>function afterProcessCreate(processId){&#xd;
+	&#xd;
+    hAPI.setCardValue(&quot;numSolicitacao&quot;, processId);&#xd;
+    hAPI.setCardValue(&quot;solicitacaoStatus&quot;, &quot;Aberta&quot;);&#xd;
 }</eventDescription>
     </WorkflowProcessEvent>
     <WorkflowProcessEvent>
       <workflowProcessEventPK>
         <companyId>1</companyId>
-        <eventId>servicetask7</eventId>
+        <eventId>afterProcessFinish</eventId>
         <processId>assinatura_tae</processId>
         <version>1</version>
       </workflowProcessEventPK>
-      <eventDescription>function servicetask7(attempt, message) {
+      <eventDescription>function afterProcessFinish(processId){&#xd;
+    hAPI.setCardValue(&quot;solicitacaoStatus&quot;, &quot;Finalizada&quot;);&#xd;
 }</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterCancelProcess</eventId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterCancelProcess(colleagueId,processId){&#xd;
+	&#xd;
+	hAPI.setCardValue(&quot;solicitacaoStatus&quot;, &quot;Cancelada&quot;);&#xd;
+&#xd;
+	// Exclui o documento enviado ao TAE...	&#xd;
+	var docID = hAPI.getCardValue(&quot;idDoc&quot;);&#xd;
+	var token = getToken();&#xd;
+	&#xd;
+	if( docID!=&quot;&quot; &amp;&amp; docID!= null ){&#xd;
+		var c10 = DatasetFactory.createConstraint(&quot;idDocumento&quot;, docID, null, ConstraintType.MUST);&#xd;
+		var c11 = DatasetFactory.createConstraint(&quot;token&quot;, String(token), null, ConstraintType.MUST);&#xd;
+	    var constraints2 = new Array(c10, c11);&#xd;
+	    &#xd;
+	    var dsTAEDeletarEnvelope = DatasetFactory.getDataset(&quot;dsTAEDeletarEnvelope&quot;, null, [c10, c11], null);&#xd;
+	    &#xd;
+	    if( dsTAEDeletarEnvelope.rowsCount&gt;0 ){&#xd;
+	    	&#xd;
+	    	// Testando status da publicação...&#xd;
+	    	if(dsTAEDeletarEnvelope.getValue(0, &apos;success&apos;) == &apos;false&apos; || dsTAEDeletarEnvelope.getValue(0, &apos;success&apos;) == false){&#xd;
+	    		throw &quot; \n\n &lt;b&gt;Atenção&lt;/b&gt;: &quot;+dsTAEDeletarEnvelope.getValue(0, &apos;message&apos;)+&quot;\n\n&quot;;&#xd;
+	    	}// caso contrário, ok segue...&#xd;
+	    	&#xd;
+	    }else{&#xd;
+	    	throw &quot; \n\n &lt;b&gt;Atenção&lt;/b&gt;: erro ao carregar o dsTAEDeletarEnvelope - retorno vazio. Contate o administrador da plataforma. \n\n&quot;;&#xd;
+	    }&#xd;
+	}	   &#xd;
+}&#xd;
+&#xd;
+// function getToken() {&#xd;
+// 	var refresh = String(hAPI.getCardValue(&quot;refreshToken&quot;))&#xd;
+//     var DATASET = DatasetFactory.getDataset(&quot;dsTAERefreshToken&quot;, [JSON.stringify({ refreshToken: refresh })], null, null)&#xd;
+&#xd;
+//     if(DATASET.rowsCount) {&#xd;
+// 		var succeeded = DATASET.getValue(0, &quot;succeeded&quot;)&#xd;
+// 		var token = DATASET.getValue(0, &quot;token&quot;)&#xd;
+// 		var refreshToken = DATASET.getValue(0, &quot;refreshToken&quot;)&#xd;
+&#xd;
+// 		if(succeeded) {&#xd;
+// 			hAPI.setCardValue(&quot;token&quot;, token)&#xd;
+// 			hAPI.setCardValue(&quot;refreshToken&quot;, refreshToken)&#xd;
+&#xd;
+// 			return token&#xd;
+// 		}&#xd;
+//     }&#xd;
+// }&#xd;
+&#xd;
+function getToken() {&#xd;
+    var DATASET_CREDENCIAIS = DatasetFactory.getDataset(&quot;dsTAEParametros&quot;, null, null, null)&#xd;
+    &#xd;
+    var usuarioTAE = DATASET_CREDENCIAIS.getValue(0, &quot;usuarioTAE&quot;)&#xd;
+    var senhaTAE = DATASET_CREDENCIAIS.getValue(0, &quot;senhaTAE&quot;)&#xd;
+    &#xd;
+    var DATASET_LOGIN = DatasetFactory.getDataset(&quot;dsTAELogin&quot;, [usuarioTAE, senhaTAE], null, null)&#xd;
+    var token = DATASET_LOGIN.getValue(0, &quot;token&quot;)&#xd;
+    &#xd;
+    return token&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>servicetask12</eventId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>var DEFAULT_INDEX = 0&#xd;
+var DEFAULT_FOLDER = 4734&#xd;
+&#xd;
+function servicetask12(attempt, message) {&#xd;
+    var ENVELOPE_ID = hAPI.getCardValue(&quot;idDoc&quot;)&#xd;
+    var TOKEN = getToken()&#xd;
+    getManifesto(ENVELOPE_ID, TOKEN)&#xd;
+}&#xd;
+&#xd;
+function getManifesto(DOC_ID, TOKEN) {&#xd;
+    var C1 = DatasetFactory.createConstraint(&quot;IdDocumento&quot;, DOC_ID, DOC_ID, ConstraintType.MUST)&#xd;
+    var C2 = DatasetFactory.createConstraint(&quot;token&quot;, String(TOKEN), String(TOKEN), ConstraintType.MUST)&#xd;
+    var DATASET = DatasetFactory.getDataset(&quot;dsTAEDownloadEnvelopeAux&quot;, null, [C1, C2], null)&#xd;
+    var SUCCESS = DATASET.getValue(DEFAULT_INDEX, &quot;succeeded&quot;)&#xd;
+&#xd;
+    if(SUCCESS) {&#xd;
+        var FOLDER_ID = createFolder()&#xd;
+        publicarGED(DATASET, FOLDER_ID)&#xd;
+    }&#xd;
+}&#xd;
+&#xd;
+// function getToken() {&#xd;
+// 	var refresh = String(hAPI.getCardValue(&quot;refreshToken&quot;))&#xd;
+//     var DATASET = DatasetFactory.getDataset(&quot;dsTAERefreshToken&quot;, [JSON.stringify({ refreshToken: refresh })], null, null)&#xd;
+&#xd;
+//     if(DATASET.rowsCount) {&#xd;
+// 		var succeeded = DATASET.getValue(0, &quot;succeeded&quot;)&#xd;
+// 		var token = DATASET.getValue(0, &quot;token&quot;)&#xd;
+// 		var refreshToken = DATASET.getValue(0, &quot;refreshToken&quot;)&#xd;
+&#xd;
+// 		if(succeeded) {&#xd;
+// 			hAPI.setCardValue(&quot;token&quot;, token)&#xd;
+// 			hAPI.setCardValue(&quot;refreshToken&quot;, refreshToken)&#xd;
+&#xd;
+// 			return token&#xd;
+// 		}&#xd;
+//     }&#xd;
+// }&#xd;
+&#xd;
+function getToken() {&#xd;
+    var DATASET_CREDENCIAIS = DatasetFactory.getDataset(&quot;dsTAEParametros&quot;, null, null, null)&#xd;
+    &#xd;
+    var usuarioTAE = DATASET_CREDENCIAIS.getValue(0, &quot;usuarioTAE&quot;)&#xd;
+    var senhaTAE = DATASET_CREDENCIAIS.getValue(0, &quot;senhaTAE&quot;)&#xd;
+    &#xd;
+    var DATASET_LOGIN = DatasetFactory.getDataset(&quot;dsTAELogin&quot;, [usuarioTAE, senhaTAE], null, null)&#xd;
+    var token = DATASET_LOGIN.getValue(0, &quot;token&quot;)&#xd;
+    &#xd;
+    return token&#xd;
+}&#xd;
+&#xd;
+function publicarGED(DATASET, PARENT_ID) {&#xd;
+    var FILE_BYTES = DATASET.getValue(DEFAULT_INDEX, &quot;fileBytes&quot;)&#xd;
+    var FILE_NAME = DATASET.getValue(DEFAULT_INDEX, &quot;fileName&quot;)&#xd;
+    var DOCUMENT_TYPE = &quot;2&quot;&#xd;
+    var USER = getValue(&quot;WKUser&quot;)&#xd;
+    var DECODED_STRING = getDecodedString(FILE_BYTES)&#xd;
+    var ATTACHMENTS = hAPI.listAttachments()&#xd;
+    var DOC = ATTACHMENTS.get(DEFAULT_INDEX)&#xd;
+    var ATTACH_ARRAY = new java.util.ArrayList()&#xd;
+    var MAIN_ATTACH = docAPI.newAttachment()&#xd;
+&#xd;
+    docAPI.copyDocumentToUploadArea(DOC.getDocumentId(), DOC.getVersion())   &#xd;
+&#xd;
+    DOC.setDocumentId(DEFAULT_INDEX)&#xd;
+    DOC.setParentDocumentId(PARENT_ID)&#xd;
+&#xd;
+    MAIN_ATTACH.setFilecontent(DECODED_STRING)&#xd;
+    MAIN_ATTACH.setFileName(FILE_NAME)&#xd;
+    MAIN_ATTACH.setPrincipal(true)&#xd;
+    MAIN_ATTACH.setAttach(false)&#xd;
+    ATTACH_ARRAY.add(MAIN_ATTACH)&#xd;
+&#xd;
+    DOC.setDocumentDescription(FILE_NAME)&#xd;
+    DOC.setPhisicalFile(FILE_NAME)&#xd;
+    DOC.setDocumentType(DOCUMENT_TYPE)&#xd;
+    DOC.setActiveVersion(true)&#xd;
+    DOC.setColleagueId(USER)&#xd;
+    DOC.setPublisherId(USER)&#xd;
+&#xd;
+    try {&#xd;
+        var FILE = docAPI.createDocument(DOC, ATTACH_ARRAY, null, null, null)&#xd;
+    } catch (e) {&#xd;
+        &#xd;
+    }&#xd;
+    &#xd;
+    // Atualiza código do documento assinado&#xd;
+    hAPI.setCardValue(&quot;documentIdAssinado&quot;, FILE.getDocumentId())&#xd;
+}&#xd;
+&#xd;
+function getDecodedString(FILE_BYTES) {&#xd;
+    return java.util.Base64.getDecoder().decode(new String(FILE_BYTES))&#xd;
+}&#xd;
+&#xd;
+function createFolder() {&#xd;
+    var NOME_ENVELOPE = String(hAPI.getCardValue(&quot;nomeArquivo&quot;))&#xd;
+    var PARENT_ID = parseInt(getFolderId(hAPI.getCardValue(&quot;manifestoPath&quot;)))&#xd;
+    var ENVELOPE = getEnvelopeName(NOME_ENVELOPE)&#xd;
+&#xd;
+    try {&#xd;
+        var DOC = docAPI.newDocumentDto()&#xd;
+        DOC.setDocumentDescription(gerarEnvelopeName(ENVELOPE))&#xd;
+        DOC.setDocumentType(&quot;1&quot;)&#xd;
+        DOC.setParentDocumentId(PARENT_ID ? PARENT_ID : DEFAULT_FOLDER)&#xd;
+        DOC.setDocumentTypeId(&quot;&quot;)&#xd;
+          &#xd;
+        var FOLDER = docAPI.createFolder(DOC, null, null)&#xd;
+        var DOCUMENTID = FOLDER.getDocumentId()&#xd;
+        &#xd;
+        return DOCUMENTID&#xd;
+    } catch (e) {&#xd;
+        log.error(&quot;Problemas na criação da pasta:\n&quot; + e)&#xd;
+    }&#xd;
+}&#xd;
+&#xd;
+function getFolderId(PATH) {&#xd;
+    return PATH.split(&quot;-&quot;)[DEFAULT_INDEX]&#xd;
+}&#xd;
+&#xd;
+function getEnvelopeName(NAME) {&#xd;
+    return NAME.split(&quot;.&quot;)[DEFAULT_INDEX]&#xd;
+}&#xd;
+&#xd;
+function gerarEnvelopeName(NAME) {&#xd;
+    var WKNumProces = getValue(&quot;WKNumProces&quot;)&#xd;
+&#xd;
+    return WKNumProces + &quot; - &quot; + NAME&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>servicetask6</eventId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>var logStep = 0;&#xd;
+function servicetask6(attempt, message) {&#xd;
+    /*** Consulta Assinatura (TAE) ***/&#xd;
+    // setLog(&quot;info&quot;, &quot;start&quot;, &quot;&quot;);&#xd;
+   &#xd;
+	// Atualiza status do prazo de aceite&#xd;
+	// hAPI.setCardValue(&quot;prazoExcedido&quot;, getPrazoAceite())&#xd;
+&#xd;
+    //atualiza contador&#xd;
+    var numeroConsultas = parseInt(hAPI.getCardValue(&quot;numeroConsultas&quot;)) || 0&#xd;
+    // setLog(&quot;info&quot;, &quot;numeroConsultas&quot;, numeroConsultas)&#xd;
+&#xd;
+    hAPI.setCardValue(&quot;numeroConsultas&quot;, numeroConsultas+1)&#xd;
+    // setLog(&quot;info&quot;, &quot;numeroConsultas soma&quot;, numeroConsultas + 1)&#xd;
+&#xd;
+        var retorno = false;&#xd;
+        var constraints = new Array();&#xd;
+        var sortingFields = new Array();&#xd;
+&#xd;
+        constraints.push(DatasetFactory.createConstraint(&quot;id&quot;, hAPI.getCardValue(&quot;idDoc&quot;), hAPI.getCardValue(&quot;idDoc&quot;), ConstraintType.MUST));&#xd;
+        constraints.push(DatasetFactory.createConstraint(&quot;token&quot;, String(getToken()), String(getToken()), ConstraintType.MUST));&#xd;
+&#xd;
+        // setLog(&quot;info&quot;, &quot;constraints&quot;, &quot;&quot;)&#xd;
+   &#xd;
+        var dataset = DatasetFactory.getDataset(&quot;dsTAEConsultarEnvelope&quot;, null, constraints, sortingFields);&#xd;
+&#xd;
+        // setLog(&quot;info&quot;, &quot;dataset dsTAEConsultarEnvelope&quot;, &quot;&quot;)&#xd;
+&#xd;
+        if ( dataset.rowsCount &gt; 0 ) {&#xd;
+     &#xd;
+            var success = dataset.getValue(0, &quot;success&quot;);&#xd;
+            var messageDs = dataset.getValue(0, &quot;message&quot;);&#xd;
+            var codigoStatus = &quot;&quot;&#xd;
+&#xd;
+            // setLog(&quot;info&quot;, &quot;success&quot;, success)&#xd;
+            // setLog(&quot;info&quot;, &quot;message&quot;, messageDs)&#xd;
+  &#xd;
+            var resultadoAssinatura = &quot;&quot;;&#xd;
+&#xd;
+            if (success == true) {&#xd;
+&#xd;
+                // setLog(&quot;info&quot;, &quot;success true&quot;, &quot;&quot;)&#xd;
+                codigoStatus = dataset.getValue(0, &quot;status&quot;);&#xd;
+                // setLog(&quot;info&quot;, &quot;codigoStatus&quot;, codigoStatus)&#xd;
+&#xd;
+                var objetoRetornado = JSON.parse(dataset.getValue(0, &quot;objeto&quot;));&#xd;
+&#xd;
+                // setLog(&quot;info&quot;, &quot;objetoRetornado&quot;, &quot;&quot;)&#xd;
+&#xd;
+                //publicacaoOpcoes&#xd;
+                hAPI.setCardValue(&quot;nomeArquivo&quot;, objetoRetornado.data.nomeArquivo || &quot;&quot;)&#xd;
+                hAPI.setCardValue(&quot;dataPublicacao&quot;, formatDate(objetoRetornado.data.recCreatedOn) || &quot;&quot;)&#xd;
+                hAPI.setCardValue(&quot;recModifiedOn&quot;, formatDate(objetoRetornado.data.recModifiedOn) || &quot;&quot;)&#xd;
+                hAPI.setCardValue(&quot;dataExpiracao&quot;, formatDate2(objetoRetornado.data.publicacaoOpcoes.dataExpiracao))&#xd;
+                hAPI.setCardValue(&quot;mensagem&quot;, objetoRetornado.data.publicacaoOpcoes.corpoMensagem || &quot;&quot;)&#xd;
+                hAPI.setCardValue(&quot;assunto&quot;, objetoRetornado.data.publicacaoOpcoes.assuntoMensagem || &quot;&quot;)&#xd;
+                &#xd;
+                if (codigoStatus == 0) {&#xd;
+                    resultadoAssinatura = &quot;Pendente&quot;&#xd;
+                }&#xd;
+&#xd;
+                if (codigoStatus == 1) {&#xd;
+                    resultadoAssinatura = &quot;Parcialmente assinado&quot;&#xd;
+                }&#xd;
+&#xd;
+                if (codigoStatus == 2) {&#xd;
+                    resultadoAssinatura = &quot;Finalizado&quot;&#xd;
+                }&#xd;
+&#xd;
+                if (codigoStatus == 3) {&#xd;
+                    resultadoAssinatura = &quot;Todos&quot;&#xd;
+                }&#xd;
+&#xd;
+                if (codigoStatus == 4) {&#xd;
+                    resultadoAssinatura = &quot;Rejeitado&quot;;&#xd;
+                    hAPI.setCardValue(&quot;motivoRejeicao&quot;, objetoRetornado.data.motivoRejeicao);             &#xd;
+                }&#xd;
+&#xd;
+                if (codigoStatus == 5) {&#xd;
+                    resultadoAssinatura = &quot;Rascunho&quot;&#xd;
+                }&#xd;
+&#xd;
+                if (codigoStatus == 6) {&#xd;
+                    resultadoAssinatura = &quot;Pendente&quot;&#xd;
+                }            &#xd;
+                // Adicionar PaixFilho de Atualizações...&#xd;
+                atualizaStatusAssinantes(objetoRetornado)&#xd;
+                &#xd;
+            } else {&#xd;
+&#xd;
+                // setLog(&quot;info&quot;, &quot;---------------------success false-------------------&quot;, &quot;&quot;)&#xd;
+                // setLog(&quot;info&quot;, &quot;message&quot;, messageDs)&#xd;
+                if (messageDs == &quot;Documento não encontrado.&quot;) {&#xd;
+&#xd;
+                    resultadoAssinatura = &quot;Documento excluído&quot;&#xd;
+                    codigoStatus = &quot;99&quot;&#xd;
+&#xd;
+                } else {&#xd;
+&#xd;
+                    retorno = false;&#xd;
+                    throw &quot;Não foi possível consultar o status da assinatura. \n &quot; + messageDs&#xd;
+&#xd;
+                }&#xd;
+            }&#xd;
+&#xd;
+            /* codigostatus&#xd;
+                   0 = Pendente&#xd;
+                   1 = Assinado Parcialmente&#xd;
+                   2 = Finalizado&#xd;
+                   3 = Todos ???&#xd;
+                   4 = Rejeitado&#xd;
+                   5 = Rascunho&#xd;
+                   6 = Pendente Comigo&#xd;
+            */&#xd;
+&#xd;
+            hAPI.setCardValue(&quot;resultadoAssinatura&quot;, resultadoAssinatura)&#xd;
+            // setLog(&quot;info&quot;, &quot;setCardValue resultadoAssinatura&quot;, resultadoAssinatura)&#xd;
+&#xd;
+            hAPI.setCardValue(&quot;codStatusAssinatura&quot;, codigoStatus)&#xd;
+            // setLog(&quot;info&quot;, &quot;setCardValue codigoStatus&quot;, codigoStatus)&#xd;
+&#xd;
+            retorno = true;&#xd;
+        }&#xd;
+        &#xd;
+        return retorno;&#xd;
+}&#xd;
+&#xd;
+function atualizaStatusAssinantes(data){&#xd;
+&#xd;
+    // setLog(&quot;dir&quot;, &quot;start atualizaStatusAssinantes&quot;, data)&#xd;
+&#xd;
+    var indexes = hAPI.getChildrenIndexes(&quot;destinatariosTAE&quot;);&#xd;
+    &#xd;
+    // setLog(&quot;dir&quot;, &quot;indexes&quot;, indexes)&#xd;
+&#xd;
+    var idNovo = indexes.length + 1;&#xd;
+&#xd;
+    // setLog(&quot;info&quot;, &quot;idNovo&quot;, idNovo)&#xd;
+    &#xd;
+    var ASSINANTES = data.data.assinantes&#xd;
+    var ADICIONAR = true&#xd;
+    var EMAILS = []&#xd;
+&#xd;
+    if(ASSINANTES.length) {&#xd;
+        var CHILD_DATA = new java.util.HashMap()&#xd;
+&#xd;
+        for(var i = 0; i &lt; ASSINANTES.length; i++) {&#xd;
+            var ASSINANTE = ASSINANTES[i]&#xd;
+&#xd;
+            for(var j = 0; j &lt; indexes.length; j++) {&#xd;
+                var ID = indexes[j]&#xd;
+                var EMAIL_DESTINATARIO = hAPI.getCardValue(&quot;dest_email_tae___&quot; + ID)&#xd;
+&#xd;
+                if(ASSINANTE.email == EMAIL_DESTINATARIO) {&#xd;
+                    ADICIONAR = false                    &#xd;
+                }&#xd;
+            }&#xd;
+            &#xd;
+            if(ADICIONAR) {&#xd;
+                CHILD_DATA.put(&quot;dest_email_tae&quot;, ASSINANTE.email)&#xd;
+                CHILD_DATA.put(&quot;dest_nome_tae&quot;, ASSINANTE.nome)&#xd;
+                CHILD_DATA.put(&quot;dest_data_tae&quot;, formatDate(ASSINANTE.data))&#xd;
+                CHILD_DATA.put(&quot;dest_statusTipoAssinatura_tae&quot;, fnTraduzStatus(ASSINANTE.statusTipoAssinatura))&#xd;
+                CHILD_DATA.put(&quot;dest_acao_tae&quot;, String(ASSINANTE.acao))&#xd;
+                CHILD_DATA.put(&quot;dest_pendente_tae&quot;, &quot;Não&quot;)&#xd;
+    &#xd;
+                hAPI.addCardChild(&quot;destinatariosTAE&quot;, CHILD_DATA)&#xd;
+                EMAILS.push(ASSINANTE.email)&#xd;
+            }&#xd;
+        }&#xd;
+    }&#xd;
+&#xd;
+    if (data.data.pendentes &amp;&amp; data.data.pendentes.length &gt; 0) {&#xd;
+        &#xd;
+        //percorre pendentes no TAE&#xd;
+        // setLog(&quot;info&quot;, &quot;percorre pendentes no TAE&quot;, &quot;&quot;)&#xd;
+&#xd;
+        for (var i = 0; i &lt; data.data.pendentes.length; i++) {&#xd;
+            &#xd;
+            var assinante = data.data.pendentes[i]&#xd;
+&#xd;
+            // setLog(&quot;dir&quot;, &quot;assinante&quot; + i, assinante)&#xd;
+            &#xd;
+            var adicionarNaTabela = true;&#xd;
+&#xd;
+            //percorre tabela formulario&#xd;
+            // setLog(&quot;info&quot;, &quot;percorre tabela formulario&quot;, &quot;&quot;)&#xd;
+            for (var j = 0; j &lt; indexes.length; j++) {&#xd;
+&#xd;
+                var id = indexes[j];&#xd;
+                var childData = new java.util.HashMap();&#xd;
+&#xd;
+                emailDestinatario = hAPI.getCardValue(&quot;dest_email_tae___&quot; + id);&#xd;
+&#xd;
+                // setLog(&quot;info&quot;, &quot;emailDestinatario &quot; + id, emailDestinatario)&#xd;
+&#xd;
+                if (assinante.email == emailDestinatario) {&#xd;
+&#xd;
+                    // setLog(&quot;info&quot;, &quot;encontrado assinante.email == emailDestinatario &quot; + id, &quot;&quot;)&#xd;
+&#xd;
+                    adicionarNaTabela = false;&#xd;
+&#xd;
+                    //Alterado 22/06 - assinante.pendente comecou a retorno = false&#xd;
+&#xd;
+                    //hAPI.setCardValue(&quot;dest_pendente_tae___&quot; + id, assinante.pendente + &quot;&quot;)&#xd;
+                    hAPI.setCardValue(&quot;dest_pendente_tae___&quot; + id,  &quot;Sim&quot;)&#xd;
+                   &#xd;
+                    //Verificar Assinante&#xd;
+&#xd;
+                &#xd;
+                }&#xd;
+            }&#xd;
+&#xd;
+            if (adicionarNaTabela &amp;&amp; EMAILS.indexOf(assinante.email) == -1){&#xd;
+&#xd;
+                // setLog(&quot;info&quot;, &quot;adicionarNaTabela &quot;, idNovo)&#xd;
+&#xd;
+                // setLog(&quot;info&quot;, &quot;adicionarNaTabela assinante.email &quot;, assinante.email)&#xd;
+&#xd;
+                var childData = new java.util.HashMap();&#xd;
+                childData.put(&quot;dest_email_tae&quot;, assinante.email + &quot;&quot;);&#xd;
+                childData.put(&quot;dest_acao_tae&quot;, assinante.acao + &quot;&quot;);&#xd;
+                //childData.put(&quot;dest_pendente_tae&quot;, assinante.pendente + &quot;&quot;);&#xd;
+                childData.put(&quot;dest_pendente_tae&quot;,  &quot;Sim&quot;);&#xd;
+&#xd;
+                hAPI.addCardChild(&quot;destinatariosTAE&quot;, childData);&#xd;
+            }&#xd;
+        }&#xd;
+&#xd;
+        //percorre pendentes no TAE&#xd;
+        // setLog(&quot;info&quot;, &quot;percorre assinantes no TAE&quot;, &quot;&quot;)&#xd;
+&#xd;
+        for (var i = 0; i &lt; data.data.assinantes.length; i++) {&#xd;
+&#xd;
+            var assinante = data.data.assinantes[i]&#xd;
+&#xd;
+            for (var j = 0; j &lt; indexes.length; j++) {&#xd;
+&#xd;
+                var id = indexes[j];&#xd;
+                emailDestinatario = hAPI.getCardValue(&quot;dest_email_tae___&quot; + id);&#xd;
+&#xd;
+                if (assinante.email == emailDestinatario) {&#xd;
+&#xd;
+                    hAPI.setCardValue(&quot;dest_nome_tae___&quot; + id, assinante.nome)&#xd;
+                    hAPI.setCardValue(&quot;dest_data_tae___&quot; + id, formatDate(assinante.data))&#xd;
+                    hAPI.setCardValue(&quot;dest_statusTipoAssinatura_tae___&quot; + id, fnTraduzStatus(assinante.statusTipoAssinatura) + &quot;&quot;)&#xd;
+                    hAPI.setCardValue(&quot;dest_pendente_tae___&quot; + id, &quot;Não&quot;)&#xd;
+                }&#xd;
+            }&#xd;
+&#xd;
+        }&#xd;
+    } &#xd;
+}&#xd;
+&#xd;
+function setLog(tipo,titulo,conteudo){&#xd;
+    if(tipo == &quot;info&quot;){&#xd;
+        // log.info(conteudo)&#xd;
+    }&#xd;
+    if(tipo == &quot;dir&quot;){&#xd;
+        // log.dir(conteudo)&#xd;
+    }&#xd;
+&#xd;
+    logStep++;&#xd;
+}&#xd;
+&#xd;
+// Formata a data no formato DD/MM/YYYY HH:mm:ss&#xd;
+function formatDate(input) {	 &#xd;
+	 //Ex: 2022-12-05T17:27:35.146479&#xd;
+	 if(input != &quot;&quot; &amp;&amp; input != &apos;&apos; &amp;&amp; input != null &amp;&amp; input != undefined){&#xd;
+		 var datePart = input.match(/\d+/g),&#xd;
+		 year = datePart[0], // get only two digits&#xd;
+		 month = datePart[1],&#xd;
+		 day = datePart[2];	&#xd;
+		 var hora = parseInt(input.split(&quot;T&quot;)[1].split(&apos;:&apos;)[0])-3;&#xd;
+		 if(hora&lt;10){&#xd;
+			 hora = &apos;0&apos;+hora;&#xd;
+		 }&#xd;
+		 return day+&apos;/&apos;+month+&apos;/&apos;+year +&quot; &quot;+hora+&quot;:&quot;+ input.split(&quot;T&quot;)[1].split(&apos;:&apos;)[1].split(&apos;.&apos;)[0];&#xd;
+	 }else{&#xd;
+		 return &apos;-&apos;;&#xd;
+	 }	 &#xd;
+}&#xd;
+&#xd;
+//Formata a data no formato YYYY-MM-DD&#xd;
+function formatDate2(input) {	 &#xd;
+	 //Ex: 2022-12-05T17:27:35.146479&#xd;
+	 if(input != &quot;&quot; &amp;&amp; input != &apos;&apos; &amp;&amp; input != null &amp;&amp; input != undefined){&#xd;
+		 var datePart = input.match(/\d+/g),&#xd;
+		 year = datePart[0], // get only two digits&#xd;
+		 month = datePart[1],&#xd;
+		 day = datePart[2];	&#xd;
+&#xd;
+		 return year+&apos;-&apos;+month+&apos;-&apos;+day ;&#xd;
+	 }else{&#xd;
+		 return &apos;-&apos;;&#xd;
+	 }	 &#xd;
+}&#xd;
+&#xd;
+function fnTraduzStatus(codStatus){&#xd;
+	&#xd;
+	if (codStatus == 0) {&#xd;
+		return &quot;Pendente&quot;;&#xd;
+    }&#xd;
+&#xd;
+    if (codStatus == 1) {&#xd;
+    	return &quot;Parcialmente assinado&quot;;&#xd;
+    }&#xd;
+&#xd;
+    if (codStatus == 2) {&#xd;
+    	return &quot;Finalizado&quot;;&#xd;
+    }&#xd;
+&#xd;
+    if (codStatus == 3) {&#xd;
+    	return &quot;Todos&quot;;&#xd;
+    }&#xd;
+&#xd;
+    if (codStatus == 4) {&#xd;
+    	return &quot;Rejeitado&quot;;            &#xd;
+    }&#xd;
+&#xd;
+    if (codStatus == 5) {&#xd;
+    	return &quot;Rascunho&quot;;&#xd;
+    }&#xd;
+&#xd;
+    if (codStatus == 6) {&#xd;
+    	return &quot;Pendente&quot;;&#xd;
+    }  &#xd;
+	&#xd;
+}&#xd;
+&#xd;
+// function getToken() {&#xd;
+// 	var refresh = String(hAPI.getCardValue(&quot;refreshToken&quot;))&#xd;
+//     var DATASET = DatasetFactory.getDataset(&quot;dsTAERefreshToken&quot;, [JSON.stringify({ refreshToken: refresh })], null, null)&#xd;
+&#xd;
+//     if(DATASET.rowsCount) {&#xd;
+// 		var succeeded = DATASET.getValue(0, &quot;succeeded&quot;)&#xd;
+// 		var token = DATASET.getValue(0, &quot;token&quot;)&#xd;
+// 		var refreshToken = DATASET.getValue(0, &quot;refreshToken&quot;)&#xd;
+&#xd;
+// 		if(succeeded) {&#xd;
+// 			hAPI.setCardValue(&quot;token&quot;, token)&#xd;
+// 			hAPI.setCardValue(&quot;refreshToken&quot;, refreshToken)&#xd;
+&#xd;
+// 			return token&#xd;
+// 		}&#xd;
+//     }&#xd;
+// }&#xd;
+&#xd;
+function getToken() {&#xd;
+    var DATASET_CREDENCIAIS = DatasetFactory.getDataset(&quot;dsTAEParametros&quot;, null, null, null)&#xd;
+    &#xd;
+    var usuarioTAE = DATASET_CREDENCIAIS.getValue(0, &quot;usuarioTAE&quot;)&#xd;
+    var senhaTAE = DATASET_CREDENCIAIS.getValue(0, &quot;senhaTAE&quot;)&#xd;
+    &#xd;
+    var DATASET_LOGIN = DatasetFactory.getDataset(&quot;dsTAELogin&quot;, [usuarioTAE, senhaTAE], null, null)&#xd;
+    var token = DATASET_LOGIN.getValue(0, &quot;token&quot;)&#xd;
+    &#xd;
+    return token&#xd;
+}&#xd;
+&#xd;
+// function getPrazoAceite() {&#xd;
+// 	var DATA_ACEITE = hAPI.getCardValue(&quot;dataAceite&quot;)&#xd;
+// 	var C1 = DatasetFactory.createConstraint(&quot;data_aceite&quot;, DATA_ACEITE, null, ConstraintType.MUST)&#xd;
+// 	var DATASET = DatasetFactory.getDataset(&quot;ds_calcularPrazo&quot;, null, [C1], null)&#xd;
+&#xd;
+// 	var STATUS = DATASET.getValue(DEFAULT_INDEX, &quot;PRAZO_EXPIRADO&quot;)&#xd;
+// 	return STATUS&#xd;
+// }</eventDescription>
     </WorkflowProcessEvent>
     <WorkflowProcessEvent>
       <workflowProcessEventPK>
@@ -657,16 +1743,356 @@
 
 }</eventDescription>
     </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeStateEntry</eventId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeStateEntry(sequenceId){&#xd;
+	&#xd;
+	// Antes de entrar em Upload Arquivo / Criação do Envelope&#xd;
+	// if (sequenceId == 5){&#xd;
+	// 	var codUserLogado = getValue(&quot;WKUser&quot;);&#xd;
+	// 	// Antes de mais nada, testa se o usuário logado possui permissão para enviar arquivos ao TAE - tela de parametros&#xd;
+	// 	var c1 = DatasetFactory.createConstraint(&quot;userFluig&quot;, codUserLogado, codUserLogado, ConstraintType.MUST);&#xd;
+	//     var ds_getUsuariosTAE = DatasetFactory.getDataset(&quot;ds_getUsuariosTAE&quot;, null, new Array(c1), null);	&#xd;
+	//     // Ok, registro encontrado para o usuário logado...&#xd;
+	//     if( ds_getUsuariosTAE.rowsCount&lt;=0 ){&#xd;
+	//     	throw &quot; \n\n &lt;b&gt;Atenção&lt;/b&gt;: seu usuário não possui permissão para enviar arquivos ao Totvs Assinatura Eletrônica. \n Verifique a tela de parâmetros do TAE, aba usuários. \n\n&quot;;&#xd;
+	//     }&#xd;
+	// }&#xd;
+	&#xd;
+	// // Reinicia nº de consultas realizadas&#xd;
+    // if (sequenceId == 47){&#xd;
+    	&#xd;
+    //     hAPI.setCardValue(&quot;numeroConsultas&quot;, &quot;0&quot;)&#xd;
+    // }   &#xd;
+    &#xd;
+    // // Antes de finalizar, anexa o manifesto...&#xd;
+    if(sequenceId == 13){&#xd;
+    	&#xd;
+    	var ecm_documentId = hAPI.getCardValue(&quot;documentIdAssinado&quot;);&#xd;
+        // Anexa o documento criado ao processo&#xd;
+        hAPI.attachDocument(parseInt(ecm_documentId));&#xd;
+    }&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>servicetask5</eventId>
+        <processId>assinatura_tae</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>var DEFAULT_INDEX = 0&#xd;
+var INITIAL_VALUE = 1&#xd;
+var FILE_DIR = []&#xd;
+var ASSINATURA = []&#xd;
+var ANEXOS = []&#xd;
+// var TOKEN = getToken()&#xd;
+&#xd;
+function servicetask5(attempt, message) {&#xd;
+    // Antes de mais nada, testa se o usuário logado possui permissão para enviar arquivos ao TAE - tela de parametros&#xd;
+    // var USUARIO_LOGADO_TEM_PERMISSAO = getPermissaoUsuario()&#xd;
+&#xd;
+    // Ok, registro encontrado para o usuário logado...&#xd;
+    // if(USUARIO_LOGADO_TEM_PERMISSAO) { &#xd;
+	//     // Testa se foi anexado algum arquivo...&#xd;
+	// 	var FILES = getFiles()&#xd;
+&#xd;
+	//     if(!FILES.SIZE) {&#xd;
+	//     	throw &quot; \n\n &lt;b&gt;Atenção&lt;/b&gt;: anexe ao menos um arquivo no formato PDF para prosseguir. \n\n&quot;&#xd;
+	//     }&#xd;
+	// 	else {&#xd;
+	//     	// Para cada arquivo, realiza o Upload e Adiciona os destinatários...&#xd;
+	// 		handlerFiles(FILES.ALL_FILES)&#xd;
+	//     }&#xd;
+    // }&#xd;
+	// else throw &quot; \n\n &lt;b&gt;Atenção&lt;/b&gt;: seu usuário não possui permissão para enviar arquivos ao Totvs Assinatura Eletrônica. \n Verifique a tela de parâmetros do TAE, aba usuários. \n\n&quot;&#xd;
+&#xd;
+	// Testa se foi anexado algum arquivo...&#xd;
+	var FILES = getFiles()&#xd;
+&#xd;
+	if(!FILES.SIZE) {&#xd;
+		throw &quot; \n\n &lt;b&gt;Atenção&lt;/b&gt;: anexe ao menos um arquivo no formato PDF para prosseguir. \n\n&quot;&#xd;
+	}&#xd;
+	else {&#xd;
+		// Para cada arquivo, realiza o Upload e Adiciona os destinatários...&#xd;
+		handlerFiles(FILES.ALL_FILES)&#xd;
+	}&#xd;
+}&#xd;
+&#xd;
+function getFiles() {&#xd;
+	var FILES = hAPI.listAttachments()&#xd;
+&#xd;
+	return {SIZE: FILES.size(), ALL_FILES: FILES}&#xd;
+}&#xd;
+&#xd;
+// function getPermissaoUsuario() {&#xd;
+//     var COD_USUARIO_LOGADO = getValue(&quot;WKUser&quot;)&#xd;
+	&#xd;
+// 	var C1 = DatasetFactory.createConstraint(&quot;userFluig&quot;, COD_USUARIO_LOGADO, COD_USUARIO_LOGADO, ConstraintType.MUST)&#xd;
+//     var DS_GET_USUARIOS_TAE = DatasetFactory.getDataset(&quot;ds_getUsuariosTAE&quot;, null, [C1], null).rowsCount&#xd;
+    &#xd;
+//     return DS_GET_USUARIOS_TAE&#xd;
+// }&#xd;
+&#xd;
+function handlerFiles(FILES) {&#xd;
+	for(var i = DEFAULT_INDEX; i &lt; FILES.size(); i++) {&#xd;
+		var FILE = FILES.get(i)&#xd;
+		mergeFiles(FILE)&#xd;
+	}&#xd;
+				&#xd;
+	// Chamando dataset responsável pelo Upload do arquivo&#xd;
+	uploadFiles(ASSINATURA)&#xd;
+}&#xd;
+&#xd;
+function uploadFiles(DIR_ARQUIVO) {&#xd;
+	var TOKEN = getToken()&#xd;
+	var NOME_ENVELOPE = hAPI.getCardValue(&quot;nomeEnvelope&quot;)&#xd;
+	var ENDPOINT = hAPI.getCardValue(&quot;endpoint&quot;)&#xd;
+&#xd;
+	var DS_PORTA_ARQUIVO_TAE = DatasetFactory.getDataset(&quot;dsTAEUploadArquivo&quot;, [JSON.stringify(DIR_ARQUIVO), String(TOKEN), String(NOME_ENVELOPE), String(ENDPOINT)], null, null)&#xd;
+&#xd;
+	if(DS_PORTA_ARQUIVO_TAE.rowsCount) {&#xd;
+		var RESPONSE = DS_PORTA_ARQUIVO_TAE.getValue(DEFAULT_INDEX, &quot;detalhes&quot;)&#xd;
+		var REPONSE_PARSED = JSON.parse(RESPONSE)&#xd;
+		var SUCCEEDED = REPONSE_PARSED.success&#xd;
+		var DOC_ID = REPONSE_PARSED.data&#xd;
+&#xd;
+		if(SUCCEEDED) {&#xd;
+			hAPI.setCardValue(&quot;idDoc&quot;, DOC_ID)&#xd;
+			&#xd;
+			// Publica os anexos envelope&#xd;
+			uploadAnexos(DOC_ID)&#xd;
+&#xd;
+			// Montando envelope para assinatura(s)...&#xd;
+			getParamsIntegracao(DOC_ID)&#xd;
+		}&#xd;
+	}&#xd;
+	else throw &quot; \n\n &lt;b&gt;Atenção&lt;/b&gt;: erro ao carregar o dsTAEUploadArquivo - retorno vazio. Contate o administrador da plataforma. \n\n&quot;&#xd;
+}&#xd;
+&#xd;
+function uploadAnexos(DOC_ID) {&#xd;
+	var TOKEN = getToken()&#xd;
+	var ENDPOINT = hAPI.getCardValue(&quot;endpoint&quot;)&#xd;
+&#xd;
+	var DS_POST_ANEXO_TAE = DatasetFactory.getDataset(&quot;dsTAEUploadAnexo&quot;, [JSON.stringify(ANEXOS), String(DOC_ID), String(TOKEN), String(ENDPOINT)], null, null)&#xd;
+}&#xd;
+&#xd;
+function getFileDir(FILE) {&#xd;
+	// var defaultDirectory = fluigAPI.getTenantService().getTenantData([&quot;dirDefault&quot;]).get(&quot;dirDefault&quot;)&#xd;
+&#xd;
+    return (&#xd;
+        // defaultDirectory + &quot;/public/&quot; +&#xd;
+        FILE.getDocumentId() + &quot;/&quot; +&#xd;
+        FILE.getVersion() + &quot;/&quot; +&#xd;
+        FILE.getPhisicalFile()&#xd;
+    )&#xd;
+}&#xd;
+&#xd;
+function getParamsIntegracao(DOC_ID) {&#xd;
+	var CONSTRAINTS = []&#xd;
+	var ASSINAR_ENVIAR = hAPI.getCardValue(&quot;assinarEnviar&quot;) == &quot;on&quot;&#xd;
+	var UTILIZA_ORDEM_ASSINATURA = hAPI.getCardValue(&quot;utilizaOrdemAss&quot;) == &quot;on&quot;&#xd;
+	var RESP_ASS_DOCUMENT = ASSINAR_ENVIAR&#xd;
+	var ASSINATURA_MANUSCRITA = hAPI.getCardValue(&quot;assinaManus&quot;) == &quot;on&quot;&#xd;
+	var PERMITE_REJEITAR_DOCUMENTO = hAPI.getCardValue(&quot;rejeitarDocumento&quot;) == &quot;on&quot;&#xd;
+	var DATA_EXPIRACAO = hAPI.getCardValue(&quot;dataExpiracao&quot;)&#xd;
+	var ASSUNTO_MENSAGEM = hAPI.getCardValue(&quot;assunto&quot;)&#xd;
+	var CORPO_MENSAGEM = hAPI.getCardValue(&quot;mensagem&quot;)&#xd;
+&#xd;
+	// Destinatário e Observadores&#xd;
+	var PARAMS = getDestinatarios()&#xd;
+	var DESTINATARIOS = JSON.stringify(PARAMS.DESTINATARIOS)&#xd;
+	var OBSERVADORES = JSON.stringify(PARAMS.OBSERVADORES)&#xd;
+&#xd;
+	// Responsável&#xd;
+	var RESPONSAVEL = JSON.stringify(getJSONResponsavel())&#xd;
+	var ASSINATURA_RESPONSAVEL = ASSINAR_ENVIAR ? RESPONSAVEL : null&#xd;
+&#xd;
+	var TOKEN = getToken()&#xd;
+&#xd;
+	// Constraints&#xd;
+	var C10 = DatasetFactory.createConstraint(&quot;idDocumento&quot;, DOC_ID, null, ConstraintType.MUST)&#xd;
+	var C20 = DatasetFactory.createConstraint(&quot;destinatarios&quot;, DESTINATARIOS, null, ConstraintType.MUST)&#xd;
+	var C30 = DatasetFactory.createConstraint(&quot;observadores&quot;, OBSERVADORES, null, ConstraintType.MUST)&#xd;
+	var C40 = DatasetFactory.createConstraint(&quot;utilizaworkflow&quot;, UTILIZA_ORDEM_ASSINATURA, null, ConstraintType.MUST)&#xd;
+	var C50 = DatasetFactory.createConstraint(&quot;respAssDocument&quot;, RESP_ASS_DOCUMENT, null, ConstraintType.MUST)&#xd;
+	var C60 = DatasetFactory.createConstraint(&quot;dataExpiracao&quot;, DATA_EXPIRACAO, null, ConstraintType.MUST)&#xd;
+	var C70 = DatasetFactory.createConstraint(&quot;assuntoMensagem&quot;, ASSUNTO_MENSAGEM, null, ConstraintType.MUST)&#xd;
+	var C80 = DatasetFactory.createConstraint(&quot;corpoMensagem&quot;, CORPO_MENSAGEM, null, ConstraintType.MUST)&#xd;
+	var C90 = DatasetFactory.createConstraint(&quot;assManuscrita&quot;, ASSINATURA_MANUSCRITA, null, ConstraintType.MUST)&#xd;
+	var C100 = DatasetFactory.createConstraint(&quot;assinaturaResponsavel&quot;, ASSINATURA_RESPONSAVEL, null, ConstraintType.MUST)&#xd;
+	var C110 = DatasetFactory.createConstraint(&quot;rejeitarDocumento&quot;, PERMITE_REJEITAR_DOCUMENTO, null, ConstraintType.MUST)&#xd;
+	var C120 = DatasetFactory.createConstraint(&quot;token&quot;, TOKEN, null, ConstraintType.MUST)&#xd;
+	var C130 = DatasetFactory.createConstraint(&quot;lembrete&quot;, String(0), null, ConstraintType.MUST)&#xd;
+&#xd;
+	CONSTRAINTS.push(C10, C20, C30, C40, C50, C60, C70, C80, C90, C100, C110, C120, C130)&#xd;
+&#xd;
+	publicarTAE(CONSTRAINTS)&#xd;
+}&#xd;
+&#xd;
+function getJSONResponsavel() {&#xd;
+	var DOC_ID = parseInt(hAPI.getCardValue(&quot;idDoc&quot;))&#xd;
+	var TIPO_ASSINATURA = parseInt(hAPI.getCardValue(&quot;tipoDeAssinatura&quot;))&#xd;
+&#xd;
+	return {idDocumento: DOC_ID, tipoDeAssinatura: TIPO_ASSINATURA}&#xd;
+}&#xd;
+&#xd;
+function publicarTAE(CONSTRAINTS) {&#xd;
+	var DS_POST_PUBLICACAO_TAE = DatasetFactory.getDataset(&quot;dsTAECriarEnvelope&quot;, null, CONSTRAINTS, null)&#xd;
+&#xd;
+	if(DS_POST_PUBLICACAO_TAE.rowsCount) {&#xd;
+		var SUCCESS = DS_POST_PUBLICACAO_TAE.getValue(DEFAULT_INDEX, &quot;success&quot;)&#xd;
+		var COND = SUCCESS == &quot;false&quot; || SUCCESS == false&#xd;
+&#xd;
+		if(COND) {&#xd;
+			var MESSAGE = DS_POST_PUBLICACAO_TAE.getValue(DEFAULT_INDEX, &quot;message&quot;)&#xd;
+			throw &quot; \n\n &lt;b&gt;Atenção&lt;/b&gt;: &quot;+MESSAGE+&quot;\n\n&quot;&#xd;
+		}&#xd;
+	}&#xd;
+	else throw &quot; \n\n &lt;b&gt;Atenção&lt;/b&gt;: erro ao carregar o dsTAECriarEnvelope - retorno vazio. Contate o administrador da plataforma. \n\n&quot;&#xd;
+}&#xd;
+&#xd;
+function getDestinatarios() {&#xd;
+	var INDEXES = hAPI.getChildrenIndexes(&quot;tbCtts&quot;)&#xd;
+	var ORDEM_ASSINATURA = hAPI.getCardValue(&quot;utilizaOrdemAss&quot;)&#xd;
+	var DESTINATARIOS = []&#xd;
+	var OBSERVADORES = []&#xd;
+	var INITIAL_VALUE = 1&#xd;
+	var CODIGO_TIPO_AUTENTICACAO = 2&#xd;
+	var CODIGO_OBSERVADOR = 3&#xd;
+	var CODIGOS_TIPO_ID = [1, 2]&#xd;
+&#xd;
+	INDEXES.forEach(function(INDEX) {&#xd;
+		var OBJECT = {}	&#xd;
+		var EMAIL = hAPI.getCardValue(&quot;emailCtt___&quot; + INDEX)&#xd;
+		var ACAO = parseInt(hAPI.getCardValue(&quot;tipoAss___&quot; + INDEX))&#xd;
+		var WORKFLOW = parseInt(hAPI.getCardValue(&quot;ordemAss___&quot; + INDEX))&#xd;
+		var PAPEL_ASSINANTE = hAPI.getCardValue(&quot;papelAssinante___&quot; + INDEX)&#xd;
+		var TIPO_AUTENTICACAO = parseInt(hAPI.getCardValue(&quot;tipoAuth___&quot; + INDEX))&#xd;
+		var NOME_COMPLETO = hAPI.getCardValue(&quot;nomeCompleto___&quot; + INDEX)&#xd;
+		var TIPO_ID = parseInt(hAPI.getCardValue(&quot;tipoIdentificacao___&quot; + INDEX))&#xd;
+		var IDENTIFICACAO = hAPI.getCardValue(&quot;documentoIdentificacao___&quot; + INDEX)&#xd;
+&#xd;
+		var IS_DESTINATARIO = ACAO != CODIGO_OBSERVADOR&#xd;
+		var IS_ENVIO_CODIGO_POR_EMAIL = TIPO_AUTENTICACAO == CODIGO_TIPO_AUTENTICACAO&#xd;
+		var REQUIRE_ID = TIPO_ID == CODIGOS_TIPO_ID[DEFAULT_INDEX] || TIPO_ID == CODIGOS_TIPO_ID[INITIAL_VALUE]&#xd;
+		var UTILIZA_ORDEM_ASSINATURA = ORDEM_ASSINATURA != &quot;on&quot;&#xd;
+&#xd;
+		UTILIZA_ORDEM_ASSINATURA ? WORKFLOW = DEFAULT_INDEX : WORKFLOW&#xd;
+&#xd;
+		if(IS_DESTINATARIO) {&#xd;
+			OBJECT.email = String(EMAIL),&#xd;
+			OBJECT.acao = ACAO,&#xd;
+			OBJECT.tipoAutenticacao = TIPO_AUTENTICACAO,&#xd;
+			OBJECT.workflow = WORKFLOW,&#xd;
+			OBJECT.papelAssinante = String(PAPEL_ASSINANTE)&#xd;
+	&#xd;
+			if(IS_ENVIO_CODIGO_POR_EMAIL) {&#xd;
+				OBJECT.nomeCompleto = String(NOME_COMPLETO),&#xd;
+				OBJECT.tipoIdentificacao = TIPO_ID&#xd;
+	&#xd;
+				if(REQUIRE_ID) OBJECT.identificacao = String(IDENTIFICACAO)&#xd;
+			}&#xd;
+	&#xd;
+			DESTINATARIOS.push(OBJECT)&#xd;
+		}&#xd;
+		else OBSERVADORES.push({email: String(EMAIL)})&#xd;
+	})&#xd;
+  &#xd;
+	return {DESTINATARIOS: DESTINATARIOS, OBSERVADORES: OBSERVADORES}&#xd;
+}&#xd;
+&#xd;
+function mergeFiles(FILE) {&#xd;
+	var INDEXES = hAPI.getChildrenIndexes(&quot;documentos&quot;)&#xd;
+&#xd;
+	INDEXES.forEach(function(INDEX) {&#xd;
+		var FILE_NAME = String(hAPI.getCardValue(&quot;documento___&quot; + INDEX))&#xd;
+		var ACAO = parseInt(hAPI.getCardValue(&quot;acoesDocumento___&quot; + INDEX))&#xd;
+		var EXTENSAO = getFileExtension(FILE_NAME)&#xd;
+		var APPLICATION = getFileApplication(EXTENSAO)&#xd;
+		var NAME = FILE_NAME == FILE.getPhisicalFile()&#xd;
+		var DOCUMENT_ID = FILE.getDocumentId()&#xd;
+&#xd;
+		if(NAME) {&#xd;
+			switch(ACAO) {&#xd;
+				case 1:&#xd;
+					ASSINATURA.push({dir: String(getFileDir(FILE)).trim(),application: APPLICATION.trim(), documentId: parseInt(DOCUMENT_ID), fileName: FILE_NAME.trim()})&#xd;
+					break&#xd;
+	&#xd;
+				case 2:&#xd;
+					ANEXOS.push({dir: String(getFileDir(FILE)).trim(), application: &quot;application/octet-stream&quot;, documentId: parseInt(DOCUMENT_ID), fileName: FILE_NAME.trim()})&#xd;
+					break	&#xd;
+			}&#xd;
+		}&#xd;
+	})&#xd;
+}&#xd;
+&#xd;
+function getFileExtension(FILE) {&#xd;
+	return FILE.split(&quot;.&quot;)[INITIAL_VALUE]&#xd;
+}&#xd;
+&#xd;
+function getFileApplication(FILE_EXTENSION) {&#xd;
+	switch(FILE_EXTENSION) {&#xd;
+		case &quot;pdf&quot;:&#xd;
+			return &quot;application/pdf&quot;&#xd;
+&#xd;
+		case &quot;docx&quot;:&#xd;
+			return &quot;application/vnd.openxmlformats-officedocument.wordprocessingml.document&quot;	&#xd;
+&#xd;
+		case &quot;doc&quot;:&#xd;
+			return &quot;application/msword&quot;&#xd;
+	}&#xd;
+}&#xd;
+&#xd;
+function getToken() {&#xd;
+	var refresh = String(hAPI.getCardValue(&quot;refreshToken&quot;))&#xd;
+    var DATASET = DatasetFactory.getDataset(&quot;dsTAERefreshToken&quot;, [JSON.stringify({ refreshToken: refresh })], null, null)&#xd;
+&#xd;
+    if(DATASET.rowsCount) {&#xd;
+		var succeeded = DATASET.getValue(0, &quot;succeeded&quot;)&#xd;
+		var token = DATASET.getValue(0, &quot;token&quot;)&#xd;
+		var refreshToken = DATASET.getValue(0, &quot;refreshToken&quot;)&#xd;
+&#xd;
+		if(succeeded) {&#xd;
+			hAPI.setCardValue(&quot;token&quot;, token)&#xd;
+			hAPI.setCardValue(&quot;refreshToken&quot;, refreshToken)&#xd;
+&#xd;
+			return token&#xd;
+		}&#xd;
+    }&#xd;
+}&#xd;
+&#xd;
+// function getToken() {&#xd;
+//     var DATASET_CREDENCIAIS = DatasetFactory.getDataset(&quot;dsTAEParametros&quot;, null, null, null)&#xd;
+    &#xd;
+//     var usuarioTAE = DATASET_CREDENCIAIS.getValue(0, &quot;usuarioTAE&quot;)&#xd;
+//     var senhaTAE = DATASET_CREDENCIAIS.getValue(0, &quot;senhaTAE&quot;)&#xd;
+    &#xd;
+//     var DATASET_LOGIN = DatasetFactory.getDataset(&quot;dsTAELogin&quot;, [usuarioTAE, senhaTAE], null, null)&#xd;
+//     var token = DATASET_LOGIN.getValue(0, &quot;token&quot;)&#xd;
+    &#xd;
+//     return token&#xd;
+// }&#xd;
+&#xd;
+// function getToken() {&#xd;
+// 	return hAPI.getCardValue(&quot;token&quot;)&#xd;
+// }</eventDescription>
+    </WorkflowProcessEvent>
   </list>
   <list/>
   <list>
     <SwimLane>
       <color>FFFFFF</color>
-      <height>351</height>
-      <width>801</width>
-      <positionX>10</positionX>
-      <positionY>10</positionY>
-      <stateName>Assinatura TAE</stateName>
+      <height>391</height>
+      <width>941</width>
+      <positionX>40</positionX>
+      <positionY>30</positionY>
+      <stateName>Totvs Assinatura Eletrônica - TAE</stateName>
       <type>1</type>
       <parentSequence>0</parentSequence>
       <swimLanePK>
@@ -676,40 +2102,90 @@
         <sequence>1</sequence>
       </swimLanePK>
     </SwimLane>
-    <SwimLane>
-      <color>9F9F9F</color>
-      <height>351</height>
-      <width>771</width>
-      <positionX>40</positionX>
-      <positionY>10</positionY>
-      <stateName>Sistema</stateName>
-      <type>2</type>
-      <parentSequence>1</parentSequence>
-      <swimLanePK>
-        <companyId>1</companyId>
-        <processId>assinatura_tae</processId>
-        <version>1</version>
-        <sequence>2</sequence>
-      </swimLanePK>
-    </SwimLane>
   </list>
   <list/>
   <list/>
-  <list/>
+  <list>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>2</version>
+        <linkSequence>49</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>315</positionX>
+      <positionY>361</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>2</version>
+        <linkSequence>49</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>315</positionX>
+      <positionY>177</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>2</version>
+        <linkSequence>62</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>543</positionX>
+      <positionY>75</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>2</version>
+        <linkSequence>69</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>887</positionX>
+      <positionY>361</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>2</version>
+        <linkSequence>72</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>543</positionX>
+      <positionY>97</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>assinatura_tae</processId>
+        <version>2</version>
+        <linkSequence>73</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>927</positionX>
+      <positionY>361</positionY>
+    </ProcessLinkBend>
+  </list>
   <list>
     <ProcessStateTrigger>
       <processStateTriggerPK>
         <companyId>1</companyId>
         <processId>assinatura_tae</processId>
         <version>2</version>
-        <stateSequence>13</stateSequence>
+        <stateSequence>61</stateSequence>
         <triggerSequence>0</triggerSequence>
       </processStateTriggerPK>
       <runType>0</runType>
-      <type>3</type>
-      <value>assinatura_tae.intermediateconditional13.js</value>
+      <type>2</type>
       <timeTrigger>0:0:0</timeTrigger>
-      <frequencia>05</frequencia>
+      <frequencia>02</frequencia>
     </ProcessStateTrigger>
   </list>
   <list/>
@@ -719,10 +2195,9 @@
       <companyId>1</companyId>
       <processId>assinatura_tae</processId>
       <version>1</version>
-      <sequence>7</sequence>
+      <sequence>5</sequence>
       <attempts>0</attempts>
       <sucessFullMessage>Integração executada com sucesso</sucessFullMessage>
-      <serviceName></serviceName>
       <frequency>1</frequency>
       <frequencyType>0</frequencyType>
     </ProcessStateService>
@@ -730,10 +2205,21 @@
       <companyId>1</companyId>
       <processId>assinatura_tae</processId>
       <version>1</version>
-      <sequence>15</sequence>
+      <sequence>6</sequence>
+      <attempts>5</attempts>
+      <sucessFullMessage>Consulta executada com sucesso</sucessFullMessage>
+      <serviceName>Servidor indefinido</serviceName>
+      <frequency>3</frequency>
+      <frequencyType>0</frequencyType>
+    </ProcessStateService>
+    <ProcessStateService>
+      <companyId>1</companyId>
+      <processId>assinatura_tae</processId>
+      <version>1</version>
+      <sequence>12</sequence>
       <attempts>0</attempts>
-      <sucessFullMessage>Integração executada com sucesso</sucessFullMessage>
-      <serviceName></serviceName>
+      <sucessFullMessage>Download executado com sucesso</sucessFullMessage>
+      <serviceName>Servidor indefinido</serviceName>
       <frequency>1</frequency>
       <frequencyType>0</frequencyType>
     </ProcessStateService>
@@ -741,5 +2227,42 @@
   <list/>
   <list/>
   <list/>
-  <list/>
+  <list>
+    <ConditionProcessAutomaticRules>
+      <sequence>7</sequence>
+      <expressionOrder>1</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>codStatusAssinatura</field>
+      <value>2</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>7</sequence>
+      <expressionOrder>2</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>codStatusAssinatura</field>
+      <value>4</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>7</sequence>
+      <expressionOrder>3</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>codStatusAssinatura</field>
+      <value>99</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+    <ConditionProcessAutomaticRules>
+      <sequence>7</sequence>
+      <expressionOrder>4</expressionOrder>
+      <ruleOrder>1</ruleOrder>
+      <field>prazoExcedido</field>
+      <value>true</value>
+      <operator>1</operator>
+      <valueType>1</valueType>
+    </ConditionProcessAutomaticRules>
+  </list>
 </list>

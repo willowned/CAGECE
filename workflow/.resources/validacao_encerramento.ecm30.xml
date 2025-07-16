@@ -9,13 +9,13 @@
     <active>true</active>
     <publicProcess>false</publicProcess>
     <volumeId>Default</volumeId>
-    <categoryId>CAGECE</categoryId>
+    <categoryId>TOTVS Juridico</categoryId>
     <managerEngineAllocationId></managerEngineAllocationId>
     <snapshotFrequency>0</snapshotFrequency>
     <baseDay>0</baseDay>
     <baseMonth>0</baseMonth>
     <periodId>Default</periodId>
-    <uniqueCardVersion>false</uniqueCardVersion>
+    <uniqueCardVersion>true</uniqueCardVersion>
     <keyWord></keyWord>
     <complementsLevel>1</complementsLevel>
     <notifyRequisitionerComplements>true</notifyRequisitionerComplements>
@@ -31,7 +31,7 @@
       <version>1</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
-    <formId>38</formId>
+    <formId>14</formId>
     <editionMode>true</editionMode>
     <updateAttachmentsVersion>false</updateAttachmentsVersion>
     <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>

@@ -1866,7 +1866,7 @@
     <fonts name="Arial" size="8"/>
     <fonts bold="true" name="Arial" size="8"/>
   </pi:Diagram>
-  <bpmn2:BpmnProcess author="" cardIndex="36" category="CAGECE" complementsLevel="1" expedient="Default" extendedFields="&lt;list/&gt;" formSource="server" id="solicitacao_pagamento" instruction="" keyWord="" name="Solicita&#231;&#227;o de Pagamento" notifyRequisitionerComplements="true" notifyResponsibleComplements="true" serverId="MARLON" version="2" volume="Default"/>
+  <bpmn2:BpmnProcess author="" cardIndex="12" category="TOTVS Juridico" complementsLevel="1" expedient="Default" extendedFields="&lt;list/&gt;" formSource="server" id="solicitacao_pagamento" instruction="" keyWord="" name="Solicita&#231;&#227;o de Pagamento" notifyRequisitionerComplements="true" notifyResponsibleComplements="true" serverId="CAGECE-HOMOL" uniquecardversion="true" version="1" volume="Default"/>
   <bpmn2:BpmnPool cores="FFFFFF" id="pool1" name="Solicita&#231;&#227;o de Pagamento"/>
   <bpmn2:BpmnSwimLane cores="9F9F9F" id="swimlane2" name="Solicitante"/>
   <bpmn2:BpmnSwimLane cores="C0C0C0" id="swimlane3" name="Aprovador"/>
@@ -1878,5 +1878,5 @@
   <bpmn2:BpmnEndEvent id="endevent9" incoming="flow10" name="Fim" signalId="0" type="60"/>
   <bpmn2:SequenceFlow atividadeFluxo="" atividadeRetorno="" extendedFields="&lt;list/&gt;" id="flow10" name="reprovado" sourceRef="exclusivegateway7" targetRef="endevent9"/>
   <bpmn2:BpmnEndEvent id="endevent17" incoming="flow18" name="Fim" signalId="0" type="60"/>
-  <bpmn2:SequenceFlow atividadeFluxo="" id="flow18" name="" sourceRef="exclusivegateway7" targetRef="endevent17"/>
+  <bpmn2:SequenceFlow atividadeFluxo="" atividadeRetorno="" extendedFields="&lt;list/&gt;" id="flow18" name="" sourceRef="exclusivegateway7" targetRef="endevent17"/>
 </xmi:XMI>

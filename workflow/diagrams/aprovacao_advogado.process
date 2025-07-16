@@ -1751,7 +1751,7 @@
     <fonts name="Arial" size="8"/>
     <fonts bold="true" name="Arial" size="8"/>
   </pi:Diagram>
-  <bpmn2:BpmnProcess author="" cardIndex="34" category="CAGECE" complementsLevel="1" expedient="Default" extendedFields="&lt;list/&gt;" formSource="server" id="aprovacao_advogado" instruction="" keyWord="" name="Aprova&#231;&#227;o de Prazos" notifyRequisitionerComplements="true" notifyResponsibleComplements="true" serverId="MARLON" version="1" volume="Default"/>
+  <bpmn2:BpmnProcess author="" cardIndex="34" category="TOTVS Juridico" complementsLevel="1" expedient="Default" extendedFields="&lt;list/&gt;" formSource="server" id="aprovacao_advogado" instruction="" keyWord="" name="Aprova&#231;&#227;o de Prazos" notifyRequisitionerComplements="true" notifyResponsibleComplements="true" serverId="CAGECE-HOMOL" version="1" volume="Default"/>
   <bpmn2:BpmnPool cores="FFFFFF" id="pool1" name="Aprova&#231;&#227;o Advogado"/>
   <bpmn2:BpmnSwimLane cores="9F9F9F" id="swimlane2" name="Sistema"/>
   <bpmn2:BpmnSwimLane cores="C0C0C0" id="swimlane3" name="Advogado"/>
@@ -1759,5 +1759,5 @@
   <bpmn2:BpmnTask authNotify="true" esforcoCalculo="0" executionAttempts="0" expediente="" frequency="0" id="task5" incoming="flow6" loopType="0" name="Aprovar Prazos" outgoing="flow14" selecionaColaboradores="1" type="80"/>
   <bpmn2:SequenceFlow atividadeFluxo="" atividadeRetorno="" extendedFields="&lt;list/&gt;" id="flow6" name="" sourceRef="startevent4" targetRef="task5"/>
   <bpmn2:BpmnEndEvent id="endevent13" incoming="flow14" name="Fim" signalId="0" type="60"/>
-  <bpmn2:SequenceFlow atividadeFluxo="" id="flow14" name="" sourceRef="task5" targetRef="endevent13"/>
+  <bpmn2:SequenceFlow atividadeFluxo="" atividadeRetorno="" extendedFields="&lt;list/&gt;" id="flow14" name="" sourceRef="task5" targetRef="endevent13"/>
 </xmi:XMI>
